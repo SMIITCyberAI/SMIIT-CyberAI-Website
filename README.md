@@ -1,1 +1,1 @@
-# SMIIT-CyberAI-Website
+# SMIIT-CyberAI
