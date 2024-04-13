@@ -1633,7 +1633,6 @@
                                     </label>
                                 </div>
                             </div>
-
                             <!-- Submit Button Row -->
                             <div class="row">
                                 <div
@@ -1641,7 +1640,7 @@
                                     <div class="form-btn">
                                         <button type="button"
                                             class="btn btn-primary transition_button"
-                                           onclick="sendPopupMail()"
+                                            onclick="sendPopupMail()"
                                             id="submitAudit">Submit
                                             Now</button>
                                     </div>
@@ -1683,16 +1682,68 @@
         });
         })();
         </script>
-        <script src="assets/js/audit.js"></script>
-        <script type="text/javascript"
-            src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
-        </script>
-        <script type="text/javascript">
-        (function(){
-        emailjs.init({
-        publicKey: "ndKO_u3bCfdIZd59J",
+        <script type="module">
+            // Import Firebase SDK modules
+            import { initializeApp } from "https://www.gstatic.com/firebasejs/10.11.0/firebase-app.js";
+            import { getDatabase, ref, set } from "https://www.gstatic.com/firebasejs/10.11.0/firebase-database.js";
+    
+            // Firebase configuration
+            const firebaseConfig = {
+        apiKey: "AIzaSyDtEBVzpbbJXyPKlV-LmkvvcjQNgToRMqY",
+        authDomain: "smiit-cyberai-audit.firebaseapp.com", 
+        databaseURL: "https://smiit-cyberai-audit-default-rtdb.firebaseio.com", 
+        projectId: "smiit-cyberai-audit", 
+        storageBucket: "smiit-cyberai-audit.appspot.com",
+        messagingSenderId: "1009566574685",
+        appId: "1:1009566574685:web:57384c2caa13e8d0c805b4",
+        measurementId: "G-471M98XBW3"
+            };
+        const app = initializeApp(firebaseConfig);
+        const db = getDatabase(app);
+
+        document.getElementById("submitAudit").addEventListener('click', function(e) {
+        e.preventDefault();
+
+        const name = document.getElementById("user_name_popup").value;
+        const email = document.getElementById("user_email_popup").value;
+        const phone = document.getElementById("user_phn_popup").value;
+        const companyName = document.getElementById("company_name").value;
+        const companyWebsite = document.getElementById("company_website").value;
+        const services = document.getElementById("dropdown_options").value;
+        const message = document.getElementById("user_message_popup").value;
+
+        set(ref(db, 'AuditRequest/' + name), {
+            name: name,
+            email: email,
+            phone: phone,
+            companyName: companyName,
+            companyWebsite: companyWebsite,
+            services: services,
+            message: message
+        })
+        .then(() => {
+            console.log("Data stored successfully");
+            document.getElementById("form_id2").reset();
+            localStorage.setItem("popupClosed", "true");
+            closePopup(); 
+            removeBlur();
+        })
+        .catch((error) => {
+            console.error("Error storing data:", error);
         });
-        })();
+        });
+
+
+        function closePopup() {
+        const popup = document.getElementById("box-popup");
+        popup.style.display = "none"; 
+
+        }        
+
+        function removeBlur() {
+            mainContent.classList.remove("blur");
+            document.body.style.overflow = "";
+        }
         </script>
     </body>
 </html>
