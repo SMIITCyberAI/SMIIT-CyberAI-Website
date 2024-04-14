@@ -1,6 +1,4 @@
-function closePopup() {
-    var popup = document.getElementById("popupContainer");
-    popup.style.display = "none";
-  }
-
-  
+window.addEventListener('load', function() {
+  const preloader = document.getElementById('preloader');
+  preloader.style.display = 'none';
+});

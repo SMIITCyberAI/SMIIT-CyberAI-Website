@@ -122,6 +122,9 @@
     </head>
     <body>
         <!-- HEADER-SECTION -->
+        <div id="preloader">
+            <span class="loader"></span>
+        </div>
         <div id="main-content">
             <div class="home-header-section">
                 <div class="custom-container">
@@ -1670,6 +1673,7 @@
         <script src="assets/js/video.js"></script>
         <script src="https://www.youtube.com/iframe_api"></script>
         <script src="assets/js/contact.js"></script>
+        <script src="assets/js/index.js"></script>
         <script src="assets/js/popup.js"></script>
         <script src="assets/js/newsletter.js"></script>
         <script type="text/javascript"
@@ -1722,7 +1726,6 @@
             message: message
         })
         .then(() => {
-            console.log("Data stored successfully");
             document.getElementById("form_id2").reset();
             localStorage.setItem("popupClosed", "true");
             closePopup(); 
