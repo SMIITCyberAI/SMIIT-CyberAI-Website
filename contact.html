@@ -371,6 +371,58 @@
                                     </div>
                                 </div>
                                 <div class="col-lg-4 col-md-4 col-sm-12">
+                                    <div class="form-group">
+                                        <select
+                                            class="form-control input-fill dropdown"
+                                            name="dropdown_options"
+                                            id="dropdown_options" required>
+                                            <option value>Select Services
+                                                Interested in</option>
+                                            <option value="Option 1"
+                                                class="dropdown-color">Security
+                                                Risk Assessments
+                                            </option>
+                                            <option value="Option 2"
+                                                class="dropdown-color">Compliance
+                                                Consulting
+                                            </option>
+                                            <option value="Option 3"
+                                                class="dropdown-color">Incident
+                                                Response Planning
+                                            </option>
+                                            <option value="Option 4"
+                                                class="dropdown-color">Penetration
+                                                Testing
+                                            </option>
+                                            <option value="Option 5"
+                                                class="dropdown-color">Security
+                                                Program Design
+                                            </option>
+                                            <option value="Option 6"
+                                                class="dropdown-color">Staff
+                                                Awareness Training
+                                            </option>
+                                            <option value="Option 7"
+                                                class="dropdown-color">Vendor
+                                                Risk
+                                                Management
+                                            </option>
+                                            <option value="Option 8"
+                                                class="dropdown-color">CISO
+                                                Advisory
+                                            </option> <option
+                                                value="Option 9"
+                                                class="dropdown-color">Observability
+                                                Services
+                                            </option>
+                                        </select>
+                                        <span id="dropdown_options_error"
+                                            style="color: red;"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row justify-content-center">
+                                <div class="col-lg-4 col-md-4 col-sm-12">
                                     <div class="col-inner-msg">
                                         <textarea name="message" rows="1"
                                             placeholder="Message"
@@ -382,7 +434,26 @@
                                     </div>
                                 </div>
                             </div>
-
+                            <div
+                                class="row justify-content-center checkbox-div">
+                                <div class="checkbox-container">
+                                    <h2>
+                                        <p><input type="checkbox"
+                                                id="consentCheckbox"
+                                                class="checkbox">
+                                            <label for="consentCheckbox"
+                                                class="checkbox-label checkbox-text">I
+                                                have read and given consent to
+                                                the
+                                                <a class="privacy-color"
+                                                    href="./privacy.html">
+                                                    <u>Privacy Statement</u>
+                                                </a>
+                                            </p>
+                                        </h2>
+                                    </label>
+                                </div>
+                            </div>
                             <!-- Submit Button Row -->
                             <div class="row">
                                 <div
@@ -390,7 +461,8 @@
                                     <div class="form-btn">
                                         <button type="button"
                                             class="btn btn-primary transition_button"
-                                            onclick="sendPopupMail()">Submit
+                                            onclick="sendPopupMail()"
+                                            id="submitAudit">Submit
                                             Now</button>
                                     </div>
                                 </div>
@@ -671,7 +743,8 @@
         <script src="assets/js/contact.js"></script>
         <script src="assets/js/newsletter.js"></script>
         <script src="assets/js/index.js"></script>
-        <script src="assets/js/popup-contact.js"></script>
+        <script src="assets/js/popup.js"></script>
+        <!-- <script src="assets/js/popup-contact.js"></script> -->
         <script type="text/javascript"
             src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
 </script>
@@ -682,16 +755,68 @@
       });
    })();
 </script>
-        <script type="text/javascript"
-            src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
-        </script>
-        <script type="text/javascript">
-        (function(){
-        emailjs.init({
-        publicKey: "ndKO_u3bCfdIZd59J",
-        });
-        })();
-        </script>
+<script type="module">
+    // Import Firebase SDK modules
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.11.0/firebase-app.js";
+    import { getDatabase, ref, set } from "https://www.gstatic.com/firebasejs/10.11.0/firebase-database.js";
+
+    // Firebase configuration
+    const firebaseConfig = {
+apiKey: "AIzaSyDtEBVzpbbJXyPKlV-LmkvvcjQNgToRMqY",
+authDomain: "smiit-cyberai-audit.firebaseapp.com", 
+databaseURL: "https://smiit-cyberai-audit-default-rtdb.firebaseio.com", 
+projectId: "smiit-cyberai-audit", 
+storageBucket: "smiit-cyberai-audit.appspot.com",
+messagingSenderId: "1009566574685",
+appId: "1:1009566574685:web:57384c2caa13e8d0c805b4",
+measurementId: "G-471M98XBW3"
+    };
+const app = initializeApp(firebaseConfig);
+const db = getDatabase(app);
+
+document.getElementById("submitAudit").addEventListener('click', function(e) {
+e.preventDefault();
+
+const name = document.getElementById("user_name_popup").value;
+const email = document.getElementById("user_email_popup").value;
+const phone = document.getElementById("user_phn_popup").value;
+const companyName = document.getElementById("company_name").value;
+const companyWebsite = document.getElementById("company_website").value;
+const services = document.getElementById("dropdown_options").value;
+const message = document.getElementById("user_message_popup").value;
+
+set(ref(db, 'AuditRequest/' + name), {
+    name: name,
+    email: email,
+    phone: phone,
+    companyName: companyName,
+    companyWebsite: companyWebsite,
+    services: services,
+    message: message
+})
+.then(() => {
+    document.getElementById("form_id2").reset();
+    localStorage.setItem("popupClosed", "true");
+    closePopup(); 
+    removeBlur();
+})
+.catch((error) => {
+    console.error("Error storing data:", error);
+});
+});
+
+
+function closePopup() {
+const popup = document.getElementById("box-popup");
+popup.style.display = "none"; 
+
+}        
+
+function removeBlur() {
+    const mainContent = document.getElementById("main-content");
+    mainContent.classList.remove("blur");
+}
+</script>
     </body>
 
 </html>

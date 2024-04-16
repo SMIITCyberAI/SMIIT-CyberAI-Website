@@ -37,7 +37,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
   function blurContent() {
     mainContent.classList.add("blur");
-    // document.body.style.overflow = "hidden";
   }
 
   function removeBlur() {
@@ -59,3 +58,11 @@ function showPopup() {
   boxPopupContact.style.display = "block";
   blurContent();
 }
+
+const formInputs = document.querySelectorAll('#form_id2 input, #form_id2 textarea, #form_id2 select');
+
+formInputs.forEach(input => {
+  input.addEventListener('input', function() {
+    this.style.color = 'white'; // Change text color to white
+  });
+});
