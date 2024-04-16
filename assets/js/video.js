@@ -34,4 +34,4 @@ document
   .querySelector(".video-popup")
   .addEventListener("mouseleave", removeBlurEffect);
 
-document.querySelector(".popup-video").addEventListener("click", openVideo);
+

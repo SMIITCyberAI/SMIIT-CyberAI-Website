@@ -102,7 +102,7 @@
   z-index: 9999; /* Ensures it appears above other elements */
   backdrop-filter: blur(8px); /* Adds a blur effect to the background */
   -webkit-backdrop-filter: blur(8px); /* For Safari */
-  background-image: url('path-to-your-blur-image.jpg'); /* Replace with your blur image path */
+
   background-size: cover;
 }
 .loader {
