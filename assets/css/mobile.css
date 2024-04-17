@@ -2743,6 +2743,7 @@
     position: relative;
     left: 2%;
   }
+  
 
   html {
     overflow-x: hidden;
@@ -3396,7 +3397,9 @@
     font-size: 16px;
     line-height: 24px;
   }
-
+  .baner-text{
+    font-size: 25px;
+    }
   /* blogs */
   .blog-posts {
     padding: 0px 0 60px;
@@ -4155,7 +4158,9 @@
     border-radius: 25px;
     /* Adjust border-radius as needed */
   }
-
+  .baner-text{
+    font-size: 25px;
+    }
   .box .ball {
     width: 50px;
     /* Adjust width as needed */
@@ -4194,6 +4199,9 @@
 
   .footer-section .footer-next-list-contact {
     margin-left: 32%;
+  }
+  .baner-text{
+  font-size: 25px;
   }
 
   .custom-button {
