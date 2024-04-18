@@ -2730,6 +2730,11 @@
     right: 14%;
   }
 
+  
+  .box-blur {
+    background-color: rgb(255 255 255 / 30%);
+    backdrop-filter: blur(10px);
+  }
   .custom-button {
     position: relative;
     left: 34%;
@@ -2742,6 +2747,11 @@
     bottom: 0px;
     position: relative;
     left: 2%;
+  }
+  
+  .box-blur {
+    background-color: rgb(255 255 255 / 30%);
+    backdrop-filter: blur(10px);
   }
   
 
@@ -2759,6 +2769,11 @@
   .home-header-section .main-header .navbar-collapse .btn-talk a {
     font-size: 16px;
     line-height: 16px;
+  }
+  
+  .box-blur {
+    background-color: rgb(255 255 255 / 30%);
+    backdrop-filter: blur(10px);
   }
 
   .home-header-section .main-header .navbar-collapse .navbar-nav li a {
@@ -3436,6 +3451,10 @@
     max-width: 50%;
   }
 
+  .box-blur {
+    background-color: rgb(255 255 255 / 30%);
+    backdrop-filter: blur(10px);
+  }
   #image2,
   #image3 {
     display: none;
@@ -4181,6 +4200,11 @@
     /* Adjust positioning as needed */
   }
 
+  .box-blur {
+    background-color: rgb(255 255 255 / 30%);
+    backdrop-filter: blur(10px);
+  }
+
 
   .box .scenary {
     padding: 5px;
@@ -4202,6 +4226,10 @@
   }
   .baner-text{
   font-size: 25px;
+  }
+  .box-blur {
+    background-color: rgb(255 255 255 / 30%);
+    backdrop-filter: blur(10px);
   }
 
   .custom-button {
