@@ -596,7 +596,9 @@ html {
   position: relative;
 }
 .h1-texts{
-  color: #00bdfe;
+  -webkit-text-fill-color: #00bdfe;
+  -webkit-text-stroke: .5px white;
+
 }
 .partner-heading{
   color: white;
