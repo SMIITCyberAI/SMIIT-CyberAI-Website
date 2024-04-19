@@ -281,10 +281,8 @@
                         </div>
                         <div class="container">
                             <h1 class="text-center aos-init aos-animate"
-                                data-aos="fade-up-left" data-wow-delay=".2s">We
-                                are
-                                a leading web design agency providing creative
-                                solutions</h1>
+                                data-aos="fade-up-left" data-wow-delay=".2s"
+                                style="font-size: 52px;color: white;font-weight: 700;">Some of our Best Document for Cyber Security</h1>
                             <p class="big d-none d-sm-block wow fadeInUp"
                                 data-wow-delay=".4s">With over 20 years of
                                 experience on the digital market, we can offer
@@ -310,6 +308,82 @@
                                 fill="#4D4468"></path>
                         </svg>
 
+                        <!-- <--- Popup Screen --->
+                        <div class="box-container" id="box-popup-contact"
+                            style="display: none;">
+                            <div class="box-content">
+                                <section>
+                                    <div class="row">
+                                        <div
+                                            class="col-12 d-flex flex-column align-items-center">
+                                            <a class="navbar-brand pt-0"
+                                                href="index.html">
+                                                <img src="./assets/logo2.png"
+                                                    alt="Logo"
+                                                    class="img-fluid diverge-logo popimg"
+                                                    width="150"
+                                                    height="150">
+                                            </a>
+                                            <h2
+                                                class="text-center aos-init aos-animate"
+                                                data-aos="fade-left">SignUp to Download</h2>
+                                            <a href="#" class="close-btn"></a>
+                                        </div>
+
+                                    </div>
+                                    <form id="form_id2">
+                                        <div class="contact-us-wrapper">
+                                            <!-- First Row -->
+                                            <div class="row"
+                                                style="justify-content: center;">
+                                                <div
+                                                    class="col-lg-4 col-md-4 col-sm-12">
+                                                    <div>
+                                                        <input type="text"
+                                                            name="name"
+                                                            class="form-control input-fill"
+                                                            placeholder="Name"
+                                                            id="user_name_popup"
+                                                            required>
+                                                        <span
+                                                            id="name_error_popup"
+                                                            style="color: red;"></span>
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    class="col-lg-4 col-md-4 col-sm-12">
+                                                    <div>
+                                                        <input type="email"
+                                                            name="email"
+                                                            class="form-control input-fill"
+                                                            placeholder="Email"
+                                                            id="user_email_popup"
+                                                            required>
+                                                        <span
+                                                            id="email_error_popup"
+                                                            style="color: red;"></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- Submit Button Row -->
+                                            <div
+                                                class="col-lg-12 col-md-12 col-sm-12 text-center">
+                                                <div class="form-btn">
+                                                    <button type="button"
+                                                        class="btn btn-primary transition_button"
+                                                        onclick="sendPopupMail()"
+                                                        id="submitAudit">Submit
+                                                        Now</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+
+                                </section>
+                            </div>
+                        </div>
+
                         <!-- OUR-Services-SECTION -->
                         <section class="our-services-section">
                             <div class="container">
@@ -319,7 +393,8 @@
                                             data-aos="fade-up">Our
                                             Resources</h6>
                                         <h2 class="text-center"
-                                            data-aos="fade-up-right">Documents</h2>
+                                            data-aos="fade-up-right"
+                                            style="font-size: 52px;color: white;font-weight: 700;">Documents</h2>
                                     </div>
                                     <div class="container-fluid">
                                         <div class="row">
@@ -396,23 +471,19 @@
                                                         tabindex="0">
                                                         <div class="row">
                                                             <div
-                                                                class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-0">
+                                                                class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-0"
+                                                                onclick="showPopup()">
                                                                 <div
-                                                                    class="custom-block book-box shadow-lg"
-                                                                    onclick="showPopup()">
-
+                                                                    class="custom-block book-box shadow-lg">
                                                                     <div
-                                                                        class="d-flex"
-                                                                        onclick="showPopup()">
+                                                                        class="d-flex">
                                                                         <div>
                                                                             <h5
-                                                                                class="mb-2 text-white"
-                                                                                onclick="showPopup()">Web
+                                                                                class="mb-2 text-white">Web
                                                                                 Design</h5>
 
                                                                             <p
-                                                                                class="doc_desc"
-                                                                                onclick="showPopup()">Topic
+                                                                                class="doc_desc">Topic
                                                                                 Listing
                                                                                 Template
                                                                                 based
@@ -423,15 +494,20 @@
 
                                                                         <span
                                                                             class="badge bg-design rounded-pill ms-auto">
-                                                                            <i
-                                                                                class="fas fa-download"
-                                                                                onclick="showPopup()"></i></span>
+                                                                            <a
+                                                                                id="downloadLink"
+                                                                                href="./resources/docs/The_Security_Risk_Assessment_Methodology.pdf"
+                                                                                data-file-path="./resources/docs/The_Security_Risk_Assessment_Methodology.pdf"
+                                                                                download
+                                                                                disabled>
+                                                                                <i
+                                                                                    class="fas fa-download"></i>
+                                                                            </a></span>
                                                                     </div>
 
                                                                     <img
                                                                         src="assets/images/2.png"
                                                                         class="custom-block-image img-fluid"
-                                                                        onclick="showPopup()"
                                                                         alt>
 
                                                                 </div>
@@ -968,7 +1044,8 @@
                                             data-aos="fade-up">Our
                                             Resources</h6>
                                         <h2 class="text-center"
-                                            data-aos="fade-up-right">Video
+                                            data-aos="fade-up-right"
+                                            style="font-size: 52px;color: white;font-weight: 700;">Video
                                             Resources</h2>
                                     </div>
 
@@ -1494,17 +1571,6 @@
                                         data-aos-duration="800"
                                         class="show">
                                         <iframe
-                                            src="https://open.spotify.com/embed/episode/3ZvJ1jpxtjFIZ8sTghil7u?utm_source=generator"
-                                            width="100%"
-                                            height="152"
-                                            frameborder="0"
-                                            allowfullscreen
-                                            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
-                                    </div>
-                                    <div data-aos="fade-up"
-                                        data-aos-duration="800"
-                                        class="show">
-                                        <iframe
                                             src="https://open.spotify.com/embed/episode/0vEWGG6S1wL6IbxJsxb3sF?utm_source=generator"
                                             width="100%"
                                             height="152"
@@ -1512,127 +1578,7 @@
                                             allowfullscreen
                                             allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
                                     </div>
-                                    <div data-aos="fade-up"
-                                        data-aos-duration="800"
-                                        class="show">
-                                        <iframe
-                                            src="https://open.spotify.com/embed/episode/0PLXymZ2KH89Ty2KGFpREP?utm_source=generator"
-                                            width="100%"
-                                            height="152"
-                                            frameborder="0"
-                                            allowfullscreen
-                                            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
-                                    </div>
-                                    <div data-aos="fade-up"
-                                        data-aos-duration="800"
-                                        class="show">
-                                        <iframe
-                                            src="https://open.spotify.com/embed/episode/3qZRmQtsUgHyOVNmZzxxPw?utm_source=generator"
-                                            width="100%"
-                                            height="152"
-                                            frameborder="0"
-                                            allowfullscreen
-                                            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
-                                    </div>
-                                    <div data-aos="fade-up"
-                                        data-aos-duration="800"
-                                        class="show">
-                                        <iframe
-                                            src="https://open.spotify.com/embed/episode/3rG0WSWKcQ4iEM4JkLQRGg?utm_source=generator"
-                                            width="100%"
-                                            height="152"
-                                            frameborder="0"
-                                            allowfullscreen
-                                            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
-                                    </div>
-                                    <div data-aos="fade-up"
-                                        data-aos-duration="800"
-                                        class="show">
-                                        <iframe
-                                            src="https://open.spotify.com/embed/episode/2UmljSQsLNonJRZ88b2zfx?utm_source=generator"
-                                            width="100%"
-                                            height="152"
-                                            frameborder="0"
-                                            allowfullscreen
-                                            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
-                                    </div>
-                                    <div data-aos="fade-up"
-                                        data-aos-duration="800"
-                                        class="show">
-                                        <iframe
-                                            src="https://open.spotify.com/embed/episode/24JEpPldCxgeqGprKO7kMI?utm_source=generator"
-                                            width="100%"
-                                            height="152"
-                                            frameborder="0"
-                                            allowfullscreen
-                                            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
-                                    </div>
-                                    <div data-aos="fade-up"
-                                        data-aos-duration="800"
-                                        class="show">
-                                        <iframe
-                                            src="https://open.spotify.com/embed/episode/5nWxL1XA1Jr3C3aJLem5ZK?utm_source=generator"
-                                            width="100%"
-                                            height="152"
-                                            frameborder="0"
-                                            allowfullscreen
-                                            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
-                                    </div>
-                                    <div data-aos="fade-up"
-                                        data-aos-duration="800"
-                                        class="show">
-                                        <iframe
-                                            src="https://open.spotify.com/embed/episode/06OxqMY33JiZ23Pxw8NmDs?utm_source=generator"
-                                            width="100%"
-                                            height="152"
-                                            frameborder="0"
-                                            allowfullscreen
-                                            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
-                                    </div>
-                                    <div data-aos="fade-up"
-                                        data-aos-duration="800"
-                                        class="show">
-                                        <iframe
-                                            src="https://open.spotify.com/embed/episode/1496yN5qwJAwbLB30XzrvR?utm_source=generator"
-                                            width="100%"
-                                            height="152"
-                                            frameborder="0"
-                                            allowfullscreen
-                                            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
-                                    </div>
-                                    <div data-aos="fade-up"
-                                        data-aos-duration="800"
-                                        class="show">
-                                        <iframe
-                                            src="https://open.spotify.com/embed/episode/54UlEUdnxJ96kGkrcskhGf?utm_source=generator"
-                                            width="100%"
-                                            height="152"
-                                            frameborder="0"
-                                            allowfullscreen
-                                            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
-                                    </div>
-                                    <div data-aos="fade-up"
-                                        data-aos-duration="800"
-                                        class="show">
-                                        <iframe
-                                            src="https://open.spotify.com/embed/episode/6lbYN222AInVmmLj674vKB?utm_source=generator"
-                                            width="100%"
-                                            height="152"
-                                            frameborder="0"
-                                            allowfullscreen
-                                            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
-                                    </div>
-                                    <div data-aos="fade-up"
-                                        data-aos-duration="800"
-                                        class="show">
-                                        <iframe
-                                            src="https://open.spotify.com/embed/episode/19XfB2nyuc1Uh3BservSyf?utm_source=generator"
-                                            width="100%"
-                                            height="152"
-                                            frameborder="0"
-                                            allowfullscreen
-                                            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
-                                    </div>
+
                                 </div>
                             </section>
                             <!-- Podcasts Section Ends Here -->
@@ -1724,7 +1670,7 @@
                         </section>
                         <!-- Footer-Section -->
                         <div class="footer-section">
-                            <div class="container">
+                            <div class="container" style="max-width: 1115px;">
                                 <div class="row">
                                     <div
                                         class="col-lg-4 col-md-4 col-sm-6 smiit_icon">
@@ -1741,7 +1687,7 @@
                                                 robust
                                                 cybersecurity solutions.</p>
                                             <ul class="list-unstyled">
-                                                <li class="list-item">
+                                                <li class="list-item" >
                                                     <a
                                                         href="https://www.linkedin.com/company/smiit-cyberai"
                                                         target="_blank"><i
@@ -1893,38 +1839,94 @@
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
 
-                    <div id="toastContainer" class="toast-container"></div>
-                    <script
-                        src="https://code.jquery.com/jquery-1.12.1.min.js"></script>
-                    <script src="resources/js/bootstrap.min.js"></script>
-                    <script src="resources/js/jquery-3.3.1.min.js"></script>
-                    <script
-                        src="resources/js/jquery.magnific-popup.min.js"></script>
-                    <script src="resources/js/jquery.slicknav.js"></script>
-                    <script src="resources/js/main.js"></script>
-                    <script src="resources/js/masonry.pkgd.min.js"></script>
-                    <script src="resources/js/mixitup.min.js"></script>
-                    <script src="resources/js/owl.carousel.min.js"></script>
-                    <script src="assets/js/animations.js"></script>
-                    <script src="assets/js/bootstrap.min.js"></script>
-                    <script src="assets/js/jquery-3.6.0.min.js"></script>
-                    <script src="assets/js/popper.min.js"></script>
-                    <script src="assets/js/owl.carousel.js"></script>
-                    <script
-                        src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-                    <script src="assets/js/text-animations.js"></script>
-                    <script
-                        src="resources/css/js/bootstrap.bundle.min.js"></script>
-                    <script src="assets/js/carousel.js"></script>
-                    <script
-                        src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js"></script>
-                    <script src="https://unpkg.com/ityped@0.0.10"></script>
-                    <script src="./assets/js/type.js"></script>
-                    <script src="assets/js/custom-script.js"></script>
-                    <script src="assets/js/video.js"></script>
-                    <script src="https://www.youtube.com/iframe_api"></script>
-                    <script src="assets/js/contact.js"></script>
-                    <script src="assets/js/newsletter.js"></script>
-                </body>
-            </html>
+        <div id="toastContainer" class="toast-container"></div>
+        <script
+            src="https://code.jquery.com/jquery-1.12.1.min.js"></script>
+        <script src="resources/js/bootstrap.min.js"></script>
+        <script src="resources/js/jquery-3.3.1.min.js"></script>
+        <script
+            src="resources/js/jquery.magnific-popup.min.js"></script>
+        <script src="resources/js/jquery.slicknav.js"></script>
+        <script src="resources/js/main.js"></script>
+        <script src="resources/js/masonry.pkgd.min.js"></script>
+        <script src="resources/js/mixitup.min.js"></script>
+        <script src="resources/js/owl.carousel.min.js"></script>
+        <script src="assets/js/animations.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/jquery-3.6.0.min.js"></script>
+        <script src="assets/js/popper.min.js"></script>
+        <script src="assets/js/owl.carousel.js"></script>
+        <script
+            src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script src="assets/js/text-animations.js"></script>
+        <script
+            src="resources/css/js/bootstrap.bundle.min.js"></script>
+        <script src="assets/js/carousel.js"></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js"></script>
+        <script src="https://unpkg.com/ityped@0.0.10"></script>
+        <script src="./assets/js/type.js"></script>
+        <script src="assets/js/custom-script.js"></script>
+        <script src="assets/js/video.js"></script>
+        <script src="assets/js/popup.js"></script>
+        <script src="https://www.youtube.com/iframe_api"></script>
+        <script src="assets/js/contact.js"></script>
+        <script src="assets/js/newsletter.js"></script>
+        <script type="module">
+                        // Import Firebase SDK modules
+                        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.11.0/firebase-app.js";
+                        import { getDatabase, ref, set } from "https://www.gstatic.com/firebasejs/10.11.0/firebase-database.js";
+                    
+                        // Firebase configuration
+                        const firebaseConfig = {
+                    apiKey: "AIzaSyDtEBVzpbbJXyPKlV-LmkvvcjQNgToRMqY",
+                    authDomain: "smiit-cyberai-audit.firebaseapp.com", 
+                    databaseURL: "https://smiit-cyberai-audit-default-rtdb.firebaseio.com", 
+                    projectId: "smiit-cyberai-audit", 
+                    storageBucket: "smiit-cyberai-audit.appspot.com",
+                    messagingSenderId: "1009566574685",
+                    appId: "1:1009566574685:web:57384c2caa13e8d0c805b4",
+                    measurementId: "G-471M98XBW3"
+                        };
+                    const app = initializeApp(firebaseConfig);
+                    const db = getDatabase(app);
+                    
+                    document.getElementById("submitAudit").addEventListener('click', function(e) {
+                    e.preventDefault();
+                    
+                    const name = document.getElementById("user_name_popup").value;
+                    const email = document.getElementById("user_email_popup").value;
+                    
+                    set(ref(db, 'ResourceRequest/' + name), {
+                        name: name,
+                        email: email,
+                    })
+                    .then(() => {
+                        document.getElementById("form_id2").reset();
+                        localStorage.setItem("popupClosed", "true");
+                        closePopup(); 
+                        removeBlur();
+                    })
+                    .catch((error) => {
+                        console.error("Error storing data:", error);
+                    });
+                    });
+                    
+                    
+                    function closePopup() {
+                    const popup = document.getElementById("box-popup");
+                    popup.style.display = "none"; 
+                    
+                    }        
+                    
+                    function removeBlur() {
+                        const mainContent = document.getElementById("main-content");
+                        mainContent.classList.remove("blur");
+                    }
+                </script>
+    </body>
+</html>
