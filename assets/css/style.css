@@ -2719,6 +2719,8 @@ html {
   display: flex;
   justify-content: center;
   gap: 20px;
+  position: relative;
+  right: 14%;
 }
 
 .custom-btn {

@@ -1250,6 +1250,13 @@
     left: -21px;
   }
 
+  .banner-btn {
+    padding: 0px;
+    text-align: center;
+    display: block;
+    position: relative;
+  }
+
   .navbar-expand-lg .navbar-nav .nav-link {
     padding-left: 0;
   }
@@ -1783,6 +1790,7 @@
     padding: 0px;
     text-align: center;
     display: block;
+    position: static;
   }
 
   .home-banner-section {
