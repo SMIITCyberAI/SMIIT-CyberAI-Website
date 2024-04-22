@@ -527,9 +527,7 @@
     position: absolute;
     left: 0;
     bottom: 0;
-    border: 10px solid;
-    border-color: var(--bs-white) var(--bs-white) var(--bs-white) var(--bs-white);
-    border-radius: 50%;
+    
 
 }
 
