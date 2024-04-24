@@ -2724,15 +2724,16 @@
   }
 
   .fot-logo {
-    position: relative;
-    right: 14%;
+    position: static;
+
   }
 
-  
+
   .box-blur {
     background-color: rgb(255 255 255 / 30%);
     backdrop-filter: blur(10px);
   }
+
   .custom-button {
     position: relative;
     left: 34%;
@@ -2746,12 +2747,12 @@
     position: relative;
     left: 2%;
   }
-  
+
   .box-blur {
     background-color: rgb(255 255 255 / 30%);
     backdrop-filter: blur(10px);
   }
-  
+
 
   html {
     overflow-x: hidden;
@@ -2768,7 +2769,7 @@
     font-size: 16px;
     line-height: 16px;
   }
-  
+
   .box-blur {
     background-color: rgb(255 255 255 / 30%);
     backdrop-filter: blur(10px);
@@ -3410,9 +3411,11 @@
     font-size: 16px;
     line-height: 24px;
   }
-  .baner-text{
+
+  .baner-text {
     font-size: 25px;
-    }
+  }
+
   /* blogs */
   .blog-posts {
     padding: 0px 0 60px;
@@ -3453,6 +3456,7 @@
     background-color: rgb(255 255 255 / 30%);
     backdrop-filter: blur(10px);
   }
+
   #image2,
   #image3 {
     display: none;
@@ -4175,9 +4179,11 @@
     border-radius: 25px;
     /* Adjust border-radius as needed */
   }
-  .baner-text{
+
+  .baner-text {
     font-size: 25px;
-    }
+  }
+
   .box .ball {
     width: 50px;
     /* Adjust width as needed */
@@ -4222,9 +4228,11 @@
   .footer-section .footer-next-list-contact {
     margin-left: 32%;
   }
-  .baner-text{
-  font-size: 25px;
+
+  .baner-text {
+    font-size: 25px;
   }
+
   .box-blur {
     background-color: rgb(255 255 255 / 30%);
     backdrop-filter: blur(10px);
@@ -4265,4 +4273,71 @@
     height: auto;
     width: 70%;
   }
+}
+
+
+@media only screen and (max-width: 767px) {
+  .services__title {
+    margin-bottom: 50px;
+  }
+
+  .team__item.team__item--second {
+    margin-top: 0;
+  }
+
+  .team__item.team__item--third {
+    margin-top: 0;
+  }
+
+  .team__item.team__item--four {
+    margin-top: 0;
+  }
+
+  .team__btn {
+    position: relative;
+    padding-top: 50px;
+  }
+
+
+  .team__item {
+    margin-bottom: 20px;
+  }
+
+  .team .p-0 {
+    padding: 0 15px !important;
+  }
+
+
+  .vic {
+    padding-top: 7%;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .vic {
+    padding-top: 7%;
+  }
+
+  .brad {
+    padding-top: 7%;
+  }
+
+  .team__item.team__item--second {
+    margin-top: 0;
+  }
+
+  .team__item.team__item--third {
+    margin-top: 0;
+  }
+
+  .team__item.team__item--four {
+    margin-top: 0;
+  }
+
+  .team__btn {
+    position: relative;
+    padding-top: 50px;
+  }
+
+
 }
