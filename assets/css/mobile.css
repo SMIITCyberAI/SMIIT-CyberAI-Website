@@ -811,11 +811,26 @@
     padding-bottom: 142px;
   }
 
+  .team__item {
+    width: 150%;
+  }
+
+  .partner-imac {
+    margin-left: 1%;
+  }
 }
 
 @media screen and (max-width: 1440px) {
   .home-header-section .main-header {
     padding: 10px 0px 0 28px;
+  }
+
+  .team__item {
+    width: 155%;
+  }
+
+  .partner-imac {
+    margin-left: 1% !important;
   }
 
   .home-header-section:before {
@@ -1100,6 +1115,10 @@
     padding: 10px 0px 0 11px;
   }
 
+  .partner-imac {
+    margin-left: 1% !important;
+  }
+
   .home-header-section .main-header .navbar-collapse .btn-talk a {
     padding: 17px 30px 17px 30px;
   }
@@ -1124,6 +1143,35 @@
     position: relative;
     left: 33%;
   }
+
+  .partner-row {
+    justify-content: flex-end;
+  }
+
+  .team__item {
+    width: 187% !important;
+  }
+
+  .team__item.team__item--third {
+    margin-top: 421px;
+    margin-left: -476px;
+  }
+
+  .team__item.team__item--four {
+    margin-top: 373px;
+    margin-left: -269%;
+  }
+
+  .point {
+    margin-top: -62%;
+    margin-left: 165% !important;
+  }
+
+  .team__item.team__item--second {
+    margin-top: -60px;
+    margin-left: 83%;
+  }
+
 }
 
 @media screen and (max-width: 1199px) {
@@ -1753,7 +1801,6 @@
     position: relative;
     left: 39%;
   }
-  
 }
 
 @media only screen and (max-width: 991px) {
@@ -4286,10 +4333,12 @@
     margin-top: 0;
     margin-left: 0px;
   }
-  .team__item .team__item--point{
+
+  .team__item .team__item--point {
     margin-top: 0;
     margin-left: 0px;
   }
+
   .team__item.team__item--third {
     margin-top: -37px;
     margin-left: 0px;
@@ -4314,10 +4363,12 @@
   .team .p-0 {
     padding: 0 15px !important;
   }
-  .point{
+
+  .point {
     margin-top: 0 !important;
     margin-left: 0px !important;
   }
+
   .vic {
     padding-top: 7%;
   }
@@ -4328,20 +4379,25 @@
     padding-top: 7%;
   }
 
-  .point{
-    margin-top: 0 !important;
+  .point {
+    margin-top: 0;
     margin-left: 32px !important;
   }
-  .partner-imac{
+
+  .partner-imac {
     margin-left: 1% !important;
   }
+
   .partner-row {
 
     margin-right: 100px;
-}
-.partner-row > div {
-    width: calc(33.33% - 20px) !important; /* Adjust margin as needed */
-}
+  }
+
+  .partner-row>div {
+    width: calc(33.33% - 20px) !important;
+    /* Adjust margin as needed */
+  }
+
   .brad {
     padding-top: 7%;
   }
@@ -4350,7 +4406,8 @@
     margin-top: 0;
     margin-left: 0px;
   }
-  .team__item .team__item--point{
+
+  .team__item .team__item--point {
     margin-top: 0;
     margin-left: 0px;
   }
