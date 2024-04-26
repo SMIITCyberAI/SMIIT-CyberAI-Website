@@ -1753,6 +1753,7 @@
     position: relative;
     left: 39%;
   }
+  
 }
 
 @media only screen and (max-width: 991px) {
@@ -4283,14 +4284,20 @@
 
   .team__item.team__item--second {
     margin-top: 0;
+    margin-left: 0px;
   }
-
-  .team__item.team__item--third {
+  .team__item .team__item--point{
     margin-top: 0;
+    margin-left: 0px;
+  }
+  .team__item.team__item--third {
+    margin-top: -37px;
+    margin-left: 0px;
   }
 
   .team__item.team__item--four {
     margin-top: 0;
+    margin-left: 0px;
   }
 
   .team__btn {
@@ -4307,8 +4314,10 @@
   .team .p-0 {
     padding: 0 15px !important;
   }
-
-
+  .point{
+    margin-top: 0 !important;
+    margin-left: 0px !important;
+  }
   .vic {
     padding-top: 7%;
   }
@@ -4319,20 +4328,41 @@
     padding-top: 7%;
   }
 
+  .point{
+    margin-top: 0 !important;
+    margin-left: 32px !important;
+  }
+  .partner-imac{
+    margin-left: 1% !important;
+  }
+  .partner-row {
+
+    margin-right: 100px;
+}
+.partner-row > div {
+    width: calc(33.33% - 20px) !important; /* Adjust margin as needed */
+}
   .brad {
     padding-top: 7%;
   }
 
   .team__item.team__item--second {
     margin-top: 0;
+    margin-left: 0px;
+  }
+  .team__item .team__item--point{
+    margin-top: 0;
+    margin-left: 0px;
   }
 
   .team__item.team__item--third {
     margin-top: 0;
+    margin-left: 0px;
   }
 
   .team__item.team__item--four {
     margin-top: 0;
+    margin-left: 0px;
   }
 
   .team__btn {

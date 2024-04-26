@@ -3058,7 +3058,7 @@ html {
 }
 
 .team__item {
-  width: 100%;
+  width: 155%;
   height: 390px;
   position: relative;
   overflow: hidden;
@@ -3071,14 +3071,21 @@ html {
 
 .team__item.team__item--second {
   margin-top: -60px;
+  margin-left: 50%;
+}
+.team__item .team__item--point{
+  margin-top: -62px;
+  margin-left: 100%;
 }
 
 .team__item.team__item--third {
-  margin-top: -120px;
+  margin-top: -140px;
+  margin-left: 150%;
 }
 
 .team__item.team__item--four {
   margin-top: -180px;
+  margin-left: 199%;
 }
 
 .team__item__text {
@@ -3137,6 +3144,8 @@ html {
   right: 0;
   bottom: 0;
 }
+
+
 
 
 
