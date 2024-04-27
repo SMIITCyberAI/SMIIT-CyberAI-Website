@@ -2126,7 +2126,9 @@ START: Choose CSS
   position: absolute;
   top: -14%;
   left: 35px;
+  z-index: 9999;
 }
+
 
 .choose-group-image .image-3 {
   position: absolute;
