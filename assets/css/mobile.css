@@ -812,7 +812,7 @@
   }
 
   .team__item {
-    width: 150%;
+    width: 73%;
   }
 
   .partner-imac {
@@ -839,7 +839,7 @@
   }
 
   .home-header-section .main-header .navbar-brand {
-    margin-right:65px;
+    margin-right: 65px;
   }
 
   .home-banner-section .banner-container-box .social-icons ul {
@@ -1149,7 +1149,7 @@
   }
 
   .team__item {
-    width: 187% !important;
+    width: 73% !important;
   }
 
   .team__item.team__item--third {
@@ -2787,6 +2787,17 @@
     left: 34%;
   }
 
+  .partner-first {
+    position: relative;
+    left: 0% !important;
+    width: 120%;
+  }
+
+  .partner-second {
+    position: relative;
+    left: 0% !important;
+    width: 120%;
+  }
 }
 
 @media screen and (min-width: 889px) and (max-width: 991px) {
@@ -2810,6 +2821,7 @@
     position: relative;
     left: 36%;
   }
+
 }
 
 @media screen and (max-width: 767px) {
@@ -3492,6 +3504,8 @@
     position: relative;
     left: 35%;
   }
+
+
 }
 
 @media screen and (max-width: 575px) {
@@ -4268,6 +4282,17 @@
     /* Adjust width as needed */
   }
 
+  .partner-first {
+    position: relative;
+    left: -10% !important;
+    width: 120%;
+  }
+
+  .partner-second {
+    position: relative;
+    left: -10% !important;
+    width: 120%;
+  }
 }
 
 
@@ -4275,6 +4300,11 @@
 
   .footer-section .footer-next-list-contact {
     margin-left: 32%;
+  }
+
+  .partner-first {
+    position: relative;
+    left: 0% !important;
   }
 
   .baner-text {
@@ -4340,7 +4370,7 @@
   }
 
   .team__item.team__item--third {
-    margin-top: -37px;
+    margin-top: 0px;
     margin-left: 0px;
   }
 
@@ -4381,7 +4411,7 @@
 
   .point {
     margin-top: 0;
-    margin-left: 32px !important;
+    margin-left: 1px !important;
   }
 
   .partner-imac {
@@ -4398,9 +4428,7 @@
     /* Adjust margin as needed */
   }
 
-  .brad {
-    padding-top: 7%;
-  }
+
 
   .team__item.team__item--second {
     margin-top: 0;
