@@ -125,7 +125,7 @@
   color: var(--white-color);
 }
 
-.video-heading{
+.video-heading {
   position: relative;
   left: 42%
 }
@@ -430,10 +430,10 @@
   .popimg {
     max-width: 100px !important;
     height: auto;
-  } 
+  }
 
 
-  .video-heading{
+  .video-heading {
     justify-content: center;
     position: static;
   }

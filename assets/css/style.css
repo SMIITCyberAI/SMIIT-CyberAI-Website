@@ -3886,3 +3886,183 @@ html {
   transition: ease-in-out 0.3s;
   border: 1px solid var(--e-global-color-hover);
 }
+
+.team-card {
+  background: url("https://images6.alphacoders.com/124/1243346.png");
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(375px, 1fr));
+  justify-content: center;
+  /* Center horizontally */
+  align-items: center;
+  padding: 10%;
+  grid-gap: 40px;
+  padding-top: 1%;
+}
+
+.card {
+  background-color: #1c1b29;
+  border-radius: 20px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.18);
+  background-color: #1a2037 !important;
+}
+
+.container-card {
+  position: relative;
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+}
+
+.container-card:hover {
+  position: relative;
+  clip-path: polygon(0 0, 100% 0, 700% 85%, 0 100%);
+}
+
+img {
+  width: 100%;
+  display: block;
+  border-radius: 20px 20px 0 0;
+}
+
+.container-card:after {
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 20px 20px 0 0;
+  opacity: 0.7;
+}
+
+.card1>.container-card:hover::after {
+  background-image: linear-gradient(135deg,
+      #0100ec,
+      #fb36f4);
+}
+
+.card2>.container-card:hover::after {
+  background-image: linear-gradient(135deg,
+      #2bdce3,
+      #42ffdb);
+}
+
+.card3>.container-card:hover::after {
+  background-image: linear-gradient(135deg,
+      #ffab1d,
+      #f8501c);
+}
+
+.card4>.container-card:hover::after {
+  background-image: linear-gradient(135deg,
+      #EE74E1, #EE74E1);
+}
+
+.card5>.container-card:hover::after {
+  background-image: linear-gradient(135deg,
+      #F58EFF,
+      #FF6A90);
+}
+
+.card6>.container-card:hover::after {
+  background-image: linear-gradient(135deg,
+      #DDD6F3,
+      #CF21FF);
+}
+
+.details {
+  padding: 20px 10px;
+}
+
+.details>h3 {
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 18px;
+  margin: 10px 0 15px 0;
+}
+
+.details>p {
+  color: #a0a0a0;
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 400;
+}
+
+.team__item__social {
+  visibility: hidden;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  gap: 70%;
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-around;
+  width: fit-content;
+  z-index: 999999;
+}
+
+.icons-tags {
+  color: white;
+}
+
+.card1:hover .team__item__social {
+  visibility: visible;
+}
+
+.card2:hover .team__item__social {
+  visibility: visible;
+}
+
+.card3:hover .team__item__social {
+  visibility: visible;
+}
+
+.card4:hover .team__item__social {
+  visibility: visible;
+}
+
+.card5:hover .team__item__social {
+  visibility: visible;
+}
+
+.card6:hover .team__item__social {
+  visibility: visible;
+}
+
+
+.team__item__social a:hover {
+  transform: translateY(-5px);
+}
+
+.card1:hover .team__item__social {
+  visibility: visible;
+  transform: translate(-50%, -10px);
+}
+
+.card2:hover .team__item__social {
+  visibility: visible;
+  transform: translate(-50%, -10px);
+}
+
+.card3:hover .team__item__social {
+  visibility: visible;
+  transform: translate(-50%, -10px);
+}
+
+.card4:hover .team__item__social {
+  visibility: visible;
+  transform: translate(-50%, -10px);
+}
+
+.card5:hover .team__item__social {
+  visibility: visible;
+  transform: translate(-50%, -10px);
+}
+
+.card6:hover .team__item__social {
+  visibility: visible;
+  transform: translate(-50%, -10px);
+}
