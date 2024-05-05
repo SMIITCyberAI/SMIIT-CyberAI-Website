@@ -3919,11 +3919,11 @@ html {
   clip-path: polygon(0 0, 100% 0, 700% 85%, 0 100%);
 }
 
-img {
+/* img {
   width: 100%;
   display: block;
   border-radius: 20px 20px 0 0;
-}
+} */
 
 .container-card:after {
   content: "";
