@@ -3505,7 +3505,50 @@
     left: 35%;
   }
 
+  .vicarius {
+    left: 0% !important;
+  }
 
+  .cynet {
+    left: 0% !important;
+  }
+
+  .dope {
+    left: 0% !important;
+  }
+
+  .fortress {
+    width: 100% !important;
+  }
+
+  .threat-lap {
+    width: 100% !important;
+  }
+
+  .cynet-img {
+    width: 100% !important;
+  }
+
+  .vic1 {
+    width: 100% !important;
+  }
+
+  .vic2 {
+    width: 100% !important;
+  }
+
+  .vic3 {
+    display: none !important;
+  }
+
+  .bd-2 {
+    width: 100%;
+    right: 0% !important;
+  }
+
+  .bd-1 {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 575px) {
@@ -4293,7 +4336,7 @@
     left: -10% !important;
     width: 120%;
   }
- 
+
 }
 
 
@@ -4301,6 +4344,51 @@
 
   .footer-section .footer-next-list-contact {
     margin-left: 32%;
+  }
+
+  .vicarius {
+    left: 0% !important;
+  }
+
+  .cynet {
+    left: 0% !important;
+  }
+
+  .dope {
+    left: 0% !important;
+  }
+
+  .fortress {
+    width: 100% !important;
+  }
+
+  .threat-lap {
+    width: 100% !important;
+  }
+
+  .cynet-img {
+    width: 100% !important;
+  }
+
+  .vic1 {
+    width: 100% !important;
+  }
+
+  .vic2 {
+    width: 100% !important;
+  }
+
+  .vic3 {
+    display: none !important;
+  }
+
+  .bd-2 {
+    width: 100%;
+    right: 0% !important;
+  }
+
+  .bd-1 {
+    width: 100%;
   }
 
   .partner-first {
