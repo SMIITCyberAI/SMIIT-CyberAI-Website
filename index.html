@@ -100,8 +100,6 @@
         <link rel="stylesheet" href="./assets/js/bootstrap.min.js">
         <link rel="stylesheet" href="./assets/css/style.css">
         <link rel="stylesheet" href="./assets/css/mobile.css">
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="./assets/css/custom-style.css">
         <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
         <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
@@ -1566,15 +1564,19 @@
                                             <a href="tel:+441926674556"
                                                 class="text-decoration-none footer-link-auto">+44
                                                 (0) 19 2667 4556</a>
-                                            <i
-                                                class="fa fa-phone fa-icon footer-location3"></i>
+                                                <i class="fa fa-phone footer-location3" aria-hidden="true"></i>
+
+                                            <!-- <i
+                                                class="fa fa-phone fa-icon footer-location3"></i> -->
                                         </li>
                                         <li class="list-item">
                                             <a
                                                 href="mailto:info@smiitcyberai.com"
                                                 class="text-decoration-none footer-link-auto">info@smiitcyberai.com</a>
-                                            <i
-                                                class="fa fa-envelope fa-icon footer-location2"></i>
+                                                <i class="fa fa-envelope-o footer-location2" aria-hidden="true"></i>
+
+                                            <!-- <i
+                                                class="fa fa-envelope fa-icon footer-location2"></i> -->
                                         </li>
                                         <li class="list-item">
                                             <a
@@ -1832,6 +1834,7 @@
         <script src="assets/js/index.js"></script>
         <script src="assets/js/popup.js"></script>
         <script src="assets/js/newsletter.js"></script>
+        <script src="https://kit.fontawesome.com/628c8d2499.js" crossorigin="anonymous"></script>
         <script type="text/javascript"
             src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
         </script>
@@ -1904,17 +1907,5 @@
             mainContent.classList.remove("blur");
         }
         </script>
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
-<script>
-    $(document).ready(function(){
-        // Add hover functionality to navbar items with dropdowns
-        $('.nav-item.dropdown').hover(function() {
-            $(this).find('.dropdown-menu').stop(true, true).delay(100).fadeIn(300);
-        }, function() {
-            $(this).find('.dropdown-menu').stop(true, true).delay(100).fadeOut(300);
-        });
-    });
-</script>
     </body>
 </html>
