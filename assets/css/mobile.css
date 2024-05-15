@@ -691,7 +691,6 @@
   }
 
   .home-banner-section {
-    padding-top: 160px;
     padding-bottom: 213px;
   }
 
@@ -3549,6 +3548,9 @@
   .bd-1 {
     width: 100%;
   }
+  .team-container{
+   width: 90%; 
+  }
 }
 
 @media screen and (max-width: 575px) {
@@ -4336,7 +4338,9 @@
     left: -10% !important;
     width: 120%;
   }
-
+  .team-container{
+    width: 90%; 
+   }
 }
 
 
@@ -4433,8 +4437,9 @@
 
   }
 
-
-
+  .team-container{
+    width: 90%; 
+   }
 
   .pop-box {
     height: auto;

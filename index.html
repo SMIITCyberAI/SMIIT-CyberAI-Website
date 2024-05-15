@@ -100,7 +100,8 @@
         <link rel="stylesheet" href="./assets/js/bootstrap.min.js">
         <link rel="stylesheet" href="./assets/css/style.css">
         <link rel="stylesheet" href="./assets/css/mobile.css">
-
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="./assets/css/custom-style.css">
         <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
         <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
@@ -141,11 +142,10 @@
     <body>
         <!-- HEADER-SECTION -->
 
-       
         <div id="main-content">
             <div class="home-header-section">
                 <img src="./assets/images/meta-logo.png" alt
-                            class="star" style="display: none;">
+                    class="star" style="display: none;">
                 <div class="custom-container">
                     <figure class="banner-right-img left_icon img">
                         <img src="./assets/images/header-right-img.png" alt
@@ -186,7 +186,7 @@
                                                 <a
                                                     class="nav-link text-decoration-none navbar-text-color"
                                                     href="about.html">About
-                                                    </a>
+                                                </a>
                                             </li>
                                             <li class="nav-item">
                                                 <a
@@ -219,21 +219,19 @@
                                                     <ul class="list-unstyled">
 
                                                         <li class="nav-item"> <a
-                                                            class="dropdown-item fierce-menu nav-link"
-                                                            href="infinite-scroll.html">Blogs</a></li>
-
+                                                                class="dropdown-item fierce-menu nav-link"
+                                                                href="infinite-scroll.html">Blogs</a></li>
 
                                                         <li class="nav-item"> <a
                                                                 class="dropdown-item fierce-menu nav-link"
                                                                 href="resource.html">Docs</a></li>
-                                                        
+
                                                     </ul>
                                                 </div>
                                             </li>
 
                                             <!-- <li class="nav-item navbar-text-color"><a class="nav-link text-decoration-none contact-us-margin navbar-text-color" href="pricing.html">Pricing</a></li> -->
 
-                                            
                                         </ul>
                                         <div class="btn-talk ml-auto">
                                             <ul class="m-0 p-0">
@@ -840,10 +838,11 @@
                                         alt> <img
                                         src="./assets/images/dopelight.svg"
                                         alt> </li>
-                                <li> <img src="./assets/images/cyfirma_light.svg"
-                                            alt> <img
-                                            src="./assets/images/cyfirma_dark.svg"
-                                            alt> </li>
+                                <li> <img
+                                        src="./assets/images/cyfirma_light.svg"
+                                        alt> <img
+                                        src="./assets/images/cyfirma_dark.svg"
+                                        alt> </li>
                             </ul>
                         </div>
                     </div>
@@ -1387,6 +1386,83 @@
                     </form>
                 </div>
             </section>
+
+            <!--========== Testimonial Section Start ==============-->
+            <section id="testimonial" class="testimonial-section-two">
+                <div class="container team-container" style="padding-top: 60px;">
+                    <div class="row align-items-center testimonial-bg-color">
+                        <div class="col-lg-7">
+                            <div class="testimonial-content-area">
+                                <img class="arrow-1"
+                                    src="/product-assets/assets/images/icon/arrow.png"
+                                    alt="Icon" />
+                                <div class="swiper tj-testimonial-slider">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <div class="tj-slider-item">
+                                                <span class="sub-title">
+                                                    Our Team</span>
+                                                <h2 class="title">Pallavi
+                                                    Kumar</h2>
+                                                <p class="desc">
+                                                    A seasoned leader with over
+                                                    20 years of experience,
+                                                    I excel at building and
+                                                    launching data solutions and
+                                                    infrastructure alongside
+                                                    diverse teams. My expertise
+                                                    spans program management,
+                                                    business consulting, data
+                                                    products, and enterprise
+                                                    architecture. I have a
+                                                    proven track record of
+                                                    managing international
+                                                    teams, overseeing projects
+                                                    from concept to deployment,
+                                                    and driving ROI through
+                                                    strategic stakeholder
+                                                    engagement. Furthermore, I'm
+                                                    passionate about knowledge
+                                                    sharing and fostering strong
+                                                    client relationships. My
+                                                    technical prowess includes
+                                                    cloud platforms (Azure, AWS,
+                                                    GCP), DevOps, AI/ML, and big
+                                                    data tools like BigQuery,
+                                                    Databricks, Snowflake, and
+                                                    Data Mesh.
+                                                </p>
+                                                <a
+                                                    href="https://www.linkedin.com/in/pallavi-1b7941160/">
+                                                    <span class="text"> Founder
+                                                        SMIIT CyberAI | HBD
+                                                        Director</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-5">
+                            <div class="testimonial_image">
+                                <div class="testimonial-group">
+                                    <img class="image-1 pulse"
+                                        src="assets/images/team.png"
+                                        alt="Image" />
+                                </div>
+                                <img class="shape-1 pulse"
+                                    src="/product-assets/assets/images/shape/sec-shape8.svg"
+                                    alt="Shape" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--  -->
+            </section>
+            <!--========== Testimonial Section End ==============-->
+
             <!-- Footer-Section -->
             <div class="footer-section">
                 <div class="container">
@@ -1828,5 +1904,17 @@
             mainContent.classList.remove("blur");
         }
         </script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<script>
+    $(document).ready(function(){
+        // Add hover functionality to navbar items with dropdowns
+        $('.nav-item.dropdown').hover(function() {
+            $(this).find('.dropdown-menu').stop(true, true).delay(100).fadeIn(300);
+        }, function() {
+            $(this).find('.dropdown-menu').stop(true, true).delay(100).fadeOut(300);
+        });
+    });
+</script>
     </body>
 </html>
