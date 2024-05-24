@@ -1,0 +1,1802 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>SAP Monitoring 101: From Alerts to Insights | SMIIT
+            CyberAI</title>
+        <link rel="apple-touch-icon" sizes="57x57"
+            href="assets/images/favicons/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60"
+            href="assets/images/favicons/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72"
+            href="assets/images/favicons/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76"
+            href="assets/images/favicons/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114"
+            href="assets/images/favicons/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120"
+            href="assets/images/favicons/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144"
+            href="assets/images/favicons/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152"
+            href="assets/images/favicons/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180"
+            href="assets/images/favicons/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"
+            href="assets/images/favicons/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32"
+            href="assets/images/favicons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96"
+            href="assets/images/favicons/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16"
+            href="assets/images/favicons/favicon-16x16.png">
+        <link rel="manifest" href="/manifest.json">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage"
+            content="assets/images/favicons/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+        <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./assets/css/style.css">
+        <link rel="stylesheet" href="./assets/css/text.css">
+        <link rel="stylesheet" href="./assets/css/mobile.css">
+        <link rel="stylesheet" href="./assets/css/super-class.css">
+        <link rel="stylesheet" href="./assets/css/custom-style.css">
+        <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+        <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+        <link
+            href='http://fonts.googleapis.com/css?family=Playfair+Display:400,400italic'
+            rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700'
+            rel='stylesheet' type='text/css'>
+        <!-- Google tag (gtag.js) -->
+        <script async
+            src="https://www.googletagmanager.com/gtag/js?id=G-4HPH16NCT5"></script>
+        <script>
+   window.dataLayer = window.dataLayer || [];
+   function gtag(){dataLayer.push(arguments);}
+   gtag('js', new Date());
+ 
+   gtag('config', 'G-4HPH16NCT5');
+ </script>
+    </head>
+    <body>
+        <!-- HEADER-SECTION -->
+        <div class="home-header-section">
+            <figure class="banner-right-img left_icon img">
+                <img src="./assets/images/header-right-img.png" alt
+                    class="star">
+            </figure>
+            <header class="header">
+                <div class="main-header">
+                    <div class="container-fluid">
+                        <nav
+                            class="navbar navbar-expand-lg navbar-light p-0">
+                            <a class="navbar-brand pt-0"
+                                href="index.html"><img
+                                    src="./assets/logo2.svg" alt
+                                    class="img-fluid diverge-logo"></a>
+                            <button class="navbar-toggler collapsed"
+                                type="button" data-toggle="collapse"
+                                data-target="#navbarSupportedContent"
+                                aria-controls="navbarSupportedContent"
+                                aria-expanded="false"
+                                aria-label="Toggle navigation">
+                                <span
+                                    class="navbar-toggler-icon"></span>
+                                <span
+                                    class="navbar-toggler-icon"></span>
+                                <span
+                                    class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse"
+                                id="navbarSupportedContent">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item">
+                                        <a
+                                            class="nav-link text-decoration-none navbar-text-color home-margin-top"
+                                            href="index.html">Home<span
+                                                class="sr-only">(current)</span></a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a
+                                            class="nav-link text-decoration-none navbar-text-color"
+                                            href="about.html">About
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a
+                                            class="nav-link text-decoration-none navbar-text-color"
+                                            href="services.html">Services</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a
+                                            class="nav-link text-decoration-none navbar-text-color"
+                                            href="partner.html">Partner</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a
+                                            class="nav-link text-decoration-none navbar-text-color"
+                                            href="product.html">Products</a>
+                                    </li>
+
+                                    <li
+                                        class="nav-item dropdown redlight-dropdown blogs-li">
+                                        <a
+                                            class="nav-link dropdown-toggle"
+                                            href="#"
+                                            id="navbarDropdown2"
+                                            role="button"
+                                            data-toggle="dropdown"
+                                            aria-haspopup="true"
+                                            aria-expanded="false">Pages</a>
+                                        <div
+                                            class="dropdown-menu dropdown-content-redlight blogs-section-drop-down">
+                                            <ul class="list-unstyled">
+
+                                                <li class="nav-item"> <a
+                                                        class="dropdown-item fierce-menu nav-link"
+                                                        href="infinite-scroll.html">Blogs</a></li>
+
+                                                <li class="nav-item"> <a
+                                                        class="dropdown-item fierce-menu nav-link"
+                                                        href="resource.html">Docs</a></li>
+
+                                            </ul>
+                                        </div>
+                                    </li>
+
+                                    <!-- <li class="nav-item navbar-text-color"><a class="nav-link text-decoration-none contact-us-margin navbar-text-color" href="pricing.html">Pricing</a></li> -->
+
+                                </ul>
+                                <div class="btn-talk ml-auto">
+                                    <ul class="m-0 p-0">
+                                        <li
+                                            class="list-unstyled d-lg-inline-block"><a
+                                                class="nav-link contact"
+                                                href="contact.html">Contact
+                                                us</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </header>
+            <!-- BANNER-SECTION -->
+            <div
+                class="home-banner-section overflow-hidden position-relative sub-banner-section">
+                <div class="banner-container-box">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="sub-banner-outer">
+                                    <h1>Welcome</h1>
+
+                                    <div
+                                        class="banner-btn discover-btn-banner">
+                                        <div class="btn-inner">Home <span
+                                                class="arrow-angles"><i
+                                                    class="fa fa-angles-right"></i></span><span
+                                                class="about-margin">Blog
+                                                14</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-toggle">
+                    <div class="btn">
+                        <input type="checkbox" name="check"
+                            id="check">
+                        <label for="check" class="check">
+                            <div class="box">
+                                <div class="ball"></div>
+                                <div class="scenary">
+                                    <div class="moon">
+                                        <svg version="1.1"
+                                            id="Capa_1"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                                            x="0px" y="0px"
+                                            viewBox="0 0 499.712 499.712"
+                                            style="enable-background:new 0 0 499.712 499.712;"
+                                            xml:space="preserve">
+                                            <path
+                                                style="fill:#FFD93B;"
+                                                d="M146.88,375.528c126.272,0,228.624-102.368,228.624-228.64c0-55.952-20.16-107.136-53.52-146.88
+                                           C425.056,33.096,499.696,129.64,499.696,243.704c0,141.392-114.608,256-256,256c-114.064,0-210.608-74.64-243.696-177.712
+                                           C39.744,355.368,90.944,375.528,146.88,375.528z" />
+                                            <path
+                                                style="fill:#F4C534;"
+                                                d="M401.92,42.776c34.24,43.504,54.816,98.272,54.816,157.952c0,141.392-114.608,256-256,256
+                                           c-59.68,0-114.448-20.576-157.952-54.816c46.848,59.472,119.344,97.792,200.928,97.792c141.392,0,256-114.608,256-256
+                                           C499.712,162.12,461.392,89.64,401.92,42.776z" />
+                                            <g>
+                                                <polygon
+                                                    style="fill:#FFD83B;"
+                                                    points="128.128,99.944 154.496,153.4 213.472,161.96 170.8,203.56 180.864,262.296 
+                                               128.128,234.568 75.376,262.296 85.44,203.56 42.768,161.96 101.744,153.4 	" />
+                                                <polygon
+                                                    style="fill:#FFD83B;"
+                                                    points="276.864,82.84 290.528,110.552 321.104,114.984 298.976,136.552 304.208,166.984 
+                                               276.864,152.616 249.52,166.984 254.752,136.552 232.624,114.984 263.2,110.552 	" />
+                                            </g>
+                                        </svg>
+
+                                    </div>
+                                    <div class="sun">
+                                        <svg version="1.1"
+                                            id="Capa_1"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                                            x="0px" y="0px"
+                                            viewBox="0 0 512 512"
+                                            style="enable-background:new 0 0 512 512;"
+                                            xml:space="preserve">
+                                            <g>
+                                                <circle
+                                                    style="fill:#FFD347;"
+                                                    cx="255.997"
+                                                    cy="255.997"
+                                                    r="144.824" />
+                                                <path
+                                                    style="fill:#FFD347;"
+                                                    d="M256,56.849c-4.273,0-7.737-3.463-7.737-7.737V7.737C248.263,3.463,251.727,0,256,0
+                                                   s7.737,3.463,7.737,7.737v41.376C263.737,53.386,260.273,56.849,256,56.849z" />
+                                                <path
+                                                    style="fill:#FFD347;"
+                                                    d="M152.563,84.568c-2.674,0-5.274-1.387-6.707-3.869l-20.687-35.832
+                                                   c-2.136-3.7-0.869-8.432,2.832-10.569c3.701-2.134,8.432-0.87,10.569,2.832l20.687,35.832c2.136,3.7,0.869,8.432-2.832,10.569
+                                                   C155.206,84.234,153.876,84.568,152.563,84.568z" />
+                                                <path
+                                                    style="fill:#FFD347;"
+                                                    d="M76.823,160.294c-1.312,0-2.643-0.334-3.861-1.038L37.13,138.569
+                                                   c-3.7-2.136-4.968-6.868-2.832-10.569c2.136-3.701,6.868-4.967,10.569-2.832l35.832,20.687c3.7,2.136,4.968,6.868,2.832,10.569
+                                                   C82.097,158.907,79.497,160.294,76.823,160.294z" />
+                                                <path
+                                                    style="fill:#FFD347;"
+                                                    d="M49.112,263.737H7.737C3.464,263.737,0,260.274,0,256s3.464-7.737,7.737-7.737h41.376
+                                                   c4.273,0,7.737,3.463,7.737,7.737S53.385,263.737,49.112,263.737z" />
+                                                <path
+                                                    style="fill:#FFD347;"
+                                                    d="M41.005,387.869c-2.674,0-5.274-1.387-6.707-3.869c-2.136-3.7-0.869-8.432,2.832-10.569
+                                                   l35.832-20.687c3.7-2.134,8.432-0.87,10.569,2.832c2.136,3.7,0.869,8.432-2.832,10.569l-35.832,20.687
+                                                   C43.648,387.535,42.317,387.869,41.005,387.869z" />
+                                                <path
+                                                    style="fill:#FFD347;"
+                                                    d="M131.862,478.74c-1.312,0-2.643-0.334-3.861-1.038c-3.7-2.136-4.968-6.868-2.832-10.569
+                                                   l20.687-35.832c2.136-3.701,6.868-4.967,10.569-2.832c3.7,2.136,4.968,6.868,2.832,10.569l-20.687,35.832
+                                                   C137.136,477.352,134.536,478.74,131.862,478.74z" />
+                                                <path
+                                                    style="fill:#FFD347;"
+                                                    d="M256,512c-4.273,0-7.737-3.463-7.737-7.737v-41.376c0-4.274,3.464-7.737,7.737-7.737
+                                                   s7.737,3.463,7.737,7.737v41.376C263.737,508.537,260.273,512,256,512z" />
+                                                <path
+                                                    style="fill:#FFD347;"
+                                                    d="M380.138,478.74c-2.674,0-5.274-1.387-6.707-3.869l-20.687-35.832
+                                                   c-2.136-3.7-0.869-8.432,2.832-10.569c3.7-2.134,8.432-0.87,10.569,2.832l20.687,35.832c2.136,3.7,0.869,8.432-2.832,10.569
+                                                   C382.781,478.406,381.451,478.74,380.138,478.74z" />
+                                                <path
+                                                    style="fill:#FFD347;"
+                                                    d="M470.995,387.869c-1.312,0-2.643-0.334-3.861-1.038l-35.832-20.687
+                                                   c-3.7-2.136-4.968-6.868-2.832-10.569c2.136-3.701,6.868-4.967,10.569-2.832l35.832,20.687c3.7,2.136,4.968,6.868,2.832,10.569
+                                                   C476.269,386.481,473.669,387.869,470.995,387.869z" />
+                                                <path
+                                                    style="fill:#FFD347;"
+                                                    d="M504.263,263.737h-41.376c-4.273,0-7.737-3.463-7.737-7.737s3.464-7.737,7.737-7.737h41.376
+                                                   c4.273,0,7.737,3.463,7.737,7.737S508.536,263.737,504.263,263.737z" />
+                                                <path
+                                                    style="fill:#FFD347;"
+                                                    d="M435.177,160.294c-2.674,0-5.274-1.387-6.707-3.869c-2.136-3.7-0.869-8.432,2.832-10.569
+                                                   l35.832-20.687c3.7-2.134,8.432-0.87,10.569,2.832c2.136,3.7,0.869,8.432-2.832,10.569l-35.832,20.687
+                                                   C437.82,159.96,436.489,160.294,435.177,160.294z" />
+                                                <path
+                                                    style="fill:#FFD347;"
+                                                    d="M359.437,84.568c-1.312,0-2.643-0.334-3.861-1.038c-3.7-2.136-4.968-6.868-2.832-10.569
+                                                   l20.687-35.832c2.136-3.701,6.868-4.967,10.569-2.832c3.7,2.136,4.968,6.868,2.832,10.569l-20.687,35.832
+                                                   C364.711,83.181,362.11,84.568,359.437,84.568z" />
+                                            </g>
+                                            <path
+                                                style="fill:#FFBE31;"
+                                                d="M256,111.18c-5.242,0-10.418,0.286-15.516,0.828c72.685,7.743,129.303,69.252,129.303,143.991
+                                               s-56.619,136.249-129.303,143.992c5.098,0.544,10.273,0.828,15.516,0.828c79.982,0,144.82-64.838,144.82-144.82
+                                               S335.983,111.18,256,111.18z" />
+                                        </svg>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section
+            class="blog-posts padding-top padding-bottom overflow single-post-blog overflow-hidden">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-9 col-lg-9">
+                        <div id="blog" class="single-post01 wow slideInLeft"
+                            data-aos="fade-up">
+                            <div class="post-item">
+                                <div class="post-item-wrap">
+                                    <div class="post-image">
+                                        <a href="#">
+                                            <img alt
+                                                src="assets/SAP Blog.png">
+                                        </a>
+                                    </div>
+                                    <div class="post-item-description">
+                                        <h2 class="mb-0 intro">SAP Monitoring
+                                            Demystified: Tips and Tools for
+                                            Optimal Performance
+                                        </h2>
+                                        <div class="post-meta">
+                                            <span
+                                                class="post-meta-date color01">
+                                                May 22, 2024
+                                            </span>
+                                            <span
+                                                class="post-meta-comments color01"><a
+                                                    href><span></span>2
+                                                    Comments</a></span>
+                                        </div>
+                                        <h2 class="Intro-size">Introduction:
+                                        </h2>
+                                        <p class="text-size">
+                                            SAP (Systems, Applications, and
+                                            Products) is a suite of enterprise
+                                            resource planning (ERP) software
+                                            that enables organizations to manage
+                                            their business operations and
+                                            customer relations effectively. As
+                                            SAP systems are critical to the
+                                            smooth functioning of an enterprise,
+                                            it is essential to ensure that they
+                                            are running optimally at all times.
+                                            This is where SAP monitoring comes
+                                            into play.
+
+                                            SAP monitoring is the process of
+                                            continuously tracking and analyzing
+                                            the performance, availability, and
+                                            health of SAP systems. It involves
+                                            the use of specialized tools and
+                                            techniques to collect data from
+                                            various components of the SAP
+                                            landscape, such as servers,
+                                            databases, applications, and network
+                                            infrastructure. By monitoring these
+                                            components in real-time, IT teams
+                                            can quickly identify and resolve
+                                            issues before they impact business
+                                            operations.
+
+                                            SAP monitoring can be performed
+                                            using a variety of tools, including
+                                            SAP's native monitoring tools such
+                                            as SAP Solution Manager and SAP CCMS
+                                            (Computing Center Management
+                                            System), as well as third-party
+                                            monitoring solutions. These tools
+                                            provide a centralized console for
+                                            monitoring SAP systems, enabling IT
+                                            teams to quickly identify and
+                                            resolve issues, and ensure the
+                                            smooth running of business
+                                            operations.
+
+                                        </p>
+                                        <hr class="hr-line">
+                                        <div id='frame1' class='frame1'>
+                                            <div id='quote' class='quote'>
+                                                <img id='group'
+                                                    class='group'
+                                                    src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACUAAAAhCAYAAABeD2IVAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAHhSURBVHgBzZjvcYJAEMUfqcASLh3YQSjBDqSDpANJBbED6UBTAXSQpALsADvY3A4YEXfhbuFDfjOnDsM+3y57fxQwQEQrPzZYEK/neMCCD0z9qKnlDQvAOp1eE23MB+zonniRez2uTjnQLEODV0Lw1dQaBjiuV/E+dUiw04KtVfJx2y6hIXsuwFSwZuhrMnjckEQeEqwZKmBkxND0hKG2hyRDRxihdtbaKtQJHGnZR6ZVPQ8V2AnBLOhgRDG0Dw12JONgREsyRqAUBMyrtpJkHZykvzETBCrMwMcXgmYWI1DSso9NrFKMwPo/Vempe5f6psI8XoRr3wiF2jXoodQ0b7OVOAS1BOnLQN/cPsYg3c5HGiW1E8tpAimFU1JApv6eU4Tm4UEzICuJ7YSpkuKo+8a40S37Gc+sscf5jDicH8e+KQcbH1gWnhw5f2BTZ9jgXkyxLK/8wqYusKP9zGpgg89xazYVvqA94pTrP7Az25Q2SSrM4ClJkssMES2hE+xtcb7ufe+wIZrqEv3EXE3LgjemTO321URqHiSROkIgwwQkHxw1apK2sAhjYYf+VjOnMDaYKHuxhKGeZv+fmiHN0FAyZs6/ZX7wHseNe/aj8k1cwUj35SluSwk3ddFNjD9+ARzjtHf7nJLmAAAAAElFTkSuQmCC' />
+                                            </div>
+                                            <div
+                                                class="quote-text">
+                                                Everything you do as a system administrator should serve a single
+purpose: to secure and protect system integrity</div>
+                                            <div class="author">
+                                                <a class="author-blog"
+                                                    href="https://www.sap-press.com/sap-administration-practical-guide_3639/">
+                                                    Sebastian Schreckenbach "SAP Administration - Practical Guide"
+                                                </a></div>
+
+                                        </div>
+                                        <hr class="hr-line">
+
+                                        <div class="post-image">
+                                            <a href="#">
+                                                <img alt
+                                                    src="assets/images/sap-hana-built-in-dashboard.avif">
+                                            </a>
+                                        </div>
+                                        <br>
+                                        <div>
+                                            <h2>Features of SAP Monitoring
+                                            </h2>
+                                            <ul><p class="text-size">
+
+                                                    <li
+                                                        class="li-point"><p
+                                                            class="li-p"><b>Real-time
+                                                                Monitoring</b></p></li>
+                                                    <p
+                                                        class="text-size">A
+                                                        powerful SAP monitoring
+                                                        tool should provide
+                                                        real-time visibility
+                                                        into the performance and
+                                                        health of SAP systems.
+                                                        This allows IT teams to
+                                                        quickly identify and
+                                                        address issues as they
+                                                        occur, minimizing
+                                                        downtime and ensuring
+                                                        optimal system
+                                                        performance.</p>
+
+                                                    <li
+                                                        class="li-point">
+                                                        <p
+                                                            class="li-p"><b>Comprehensive
+                                                                Coverage</b></p></li>
+                                                    <p
+                                                        class="text-size">SAP
+                                                        landscapes are complex,
+                                                        consisting of various
+                                                        components such as
+                                                        servers, databases,
+                                                        applications, and
+                                                        network infrastructure.
+                                                        An effective monitoring
+                                                        solution should cover
+                                                        all these components,
+                                                        providing a holistic
+                                                        view of the entire SAP
+                                                        environment.</p>
+                                                    <li
+                                                        class="li-point"><p
+                                                            class="li-p"><b>Compliance
+                                                                and
+                                                                Security</b></p></li>
+                                                    <p
+                                                        class="text-size">SAP
+                                                        systems often handle
+                                                        sensitive data and are
+                                                        subject to various
+                                                        regulatory requirements.
+                                                        An SAP monitoring tool
+                                                        should include features
+                                                        that help ensure
+                                                        compliance and security,
+                                                        such as user activity
+                                                        monitoring, system
+                                                        change tracking, and
+                                                        audit trail
+                                                        generation.</p>
+                                                    <li
+                                                        class="li-point"><p
+                                                            class="li-p"><b>Scalability
+                                                                and
+                                                                Flexibility</b></p></li>
+                                                    <p
+                                                        class="text-size">As
+                                                        organizations grow and
+                                                        their SAP environments
+                                                        evolve, the monitoring
+                                                        solution should be able
+                                                        to scale accordingly. A
+                                                        scalable and flexible
+                                                        SAP monitoring tool can
+                                                        easily adapt to changing
+                                                        requirements, ensuring
+                                                        that monitoring
+                                                        capabilities keep pace
+                                                        with the organization's
+                                                        growth.</p>
+                                                    <li
+                                                        class="li-point"><p
+                                                            class="li-p"><b>Integration
+                                                                with Other
+                                                                Tools</b></p></li>
+                                                    <p
+                                                        class="text-size">SAP
+                                                        environments often
+                                                        coexist with other
+                                                        enterprise systems and
+                                                        tools. A robust SAP
+                                                        monitoring solution
+                                                        should seamlessly
+                                                        integrate with other
+                                                        monitoring and
+                                                        management tools, such
+                                                        as application
+                                                        performance management
+                                                        (APM) and IT service
+                                                        management (ITSM)
+                                                        platforms, providing a
+                                                        unified view of the IT
+                                                        landscape.</p>
+                                                    <li
+                                                        class="li-point"><p
+                                                            class="li-p"><b>Capacity
+                                                                Planning</b></p></li>
+                                                    <p
+                                                        class="text-size">SAP
+                                                        monitoring tools should
+                                                        provide insights into
+                                                        resource utilization and
+                                                        capacity trends. This
+                                                        helps IT teams optimize
+                                                        resource allocation,
+                                                        plan for future growth,
+                                                        and ensure that SAP
+                                                        systems can handle
+                                                        increasing workloads
+                                                        without compromising
+                                                        performance.</p>
+
+                                                </p>
+
+                                                <li
+                                                    class="li-point">
+                                                    <p
+                                                        class="li-p"><b>Customizable
+                                                            Dashboards</b></p></li>
+                                                <p
+                                                    class="text-size">Every
+                                                    organization has unique
+                                                    monitoring requirements
+                                                    based on their specific SAP
+                                                    environment and business
+                                                    needs. A flexible SAP
+                                                    monitoring tool should allow
+                                                    users to create customizable
+                                                    dashboards that display the
+                                                    metrics and KPIs most
+                                                    relevant to their
+                                                    organization, enabling them
+                                                    to focus on what matters
+                                                    most.</p>
+
+                                            </p>
+
+                                            <li
+                                                class="li-point">
+                                                <p
+                                                    class="li-p"><b>Proactive
+                                                        Alerts and
+                                                        Notifications</b></p></li>
+                                            <p
+                                                class="text-size">SAP monitoring
+                                                tools should be capable of
+                                                generating proactive alerts and
+                                                notifications when predefined
+                                                thresholds are breached or
+                                                anomalies are detected. This
+                                                enables IT teams to take
+                                                corrective actions promptly,
+                                                preventing minor issues from
+                                                escalating into major problems.
+                                            </p>
+
+                                        </p>
+
+                                    </ul> </div>
+                                <hr class="hr-line">
+                                <br>
+                                <h2>SAP HANA monitoring with Datadog
+                                </h2>
+                                <div class="post-image">
+                                    <a href="#">
+                                        <img alt
+                                            src="assets/images/sap-hana-memory-used.avif">
+                                    </a>
+                                </div>
+                                <br>
+                                <p class="text-size">
+                                    SAP HANA is a high-performance data
+                                    analytics platform designed to handle both
+                                    transactional (OLTP) and analytical (OLAP)
+                                    queries with remarkable efficiency. It
+                                    leverages an in-memory, column-oriented data
+                                    store to achieve rapid data processing and
+                                    analysis. This capability allows SAP HANA to
+                                    perform complex queries on its own databases
+                                    as well as on external data sources like
+                                    Hadoop or SQL Server. Additionally, SAP HANA
+                                    is the underlying database for SAP's S/4HANA
+                                    ERP suite, providing robust support for
+                                    enterprise resource planning.
+                                    <br>
+                                    <br>SAP HANA is a powerful in-memory
+                                    database that offers real-time processing
+                                    and analytics capabilities. To ensure
+                                    optimal performance and prevent potential
+                                    issues, it's essential to monitor various
+                                    aspects of your SAP HANA system. Here are
+                                    some key features of SAP monitoring with
+                                    HANA:
+                                </p>
+                                <div class="post-image">
+                                    <a href="#">
+                                        <img alt
+                                            src="assets/images/sap-hana-forecast-monitor.avif">
+                                    </a>
+                                </div>
+                                <ul><p class="text-size">
+
+                                        <li
+                                            class="li-point"><p
+                                                class="li-p"><b>Real-time Memory
+                                                    Monitoring</b></p></li>
+                                        <p
+                                            class="text-size">SAP HANA's
+                                            in-memory architecture enables
+                                            lightning-fast data access and
+                                            processing. However, it's crucial to
+                                            keep a close eye on memory usage to
+                                            avoid bottlenecks and performance
+                                            degradation. By tracking metrics
+                                            such as the percentage of available
+                                            memory utilized by each SAP HANA
+                                            service, you can proactively
+                                            identify and address memory-related
+                                            issues before they impact
+                                            end-users.</p>
+
+                                        <li
+                                            class="li-point">
+                                            <p
+                                                class="li-p"><b>Granular
+                                                    Component-level
+                                                    Insights</b></p></li>
+                                        <p
+                                            class="text-size">SAP HANA consists
+                                            of various components, such as the
+                                            index server, name server, and XS
+                                            engine. Monitoring memory
+                                            utilization at the component level
+                                            allows you to pinpoint which
+                                            services are consuming the most
+                                            resources. This granular visibility
+                                            helps you optimize your SAP HANA
+                                            system by identifying potential
+                                            areas for improvement and ensuring
+                                            efficient resource allocation.</p>
+                                        <li
+                                            class="li-point"><p
+                                                class="li-p"><b>Database-specific
+                                                    Monitoring</b></p></li>
+                                        <p
+                                            class="text-size">In addition to
+                                            monitoring overall memory usage, SAP
+                                            HANA enables you to track memory
+                                            utilization at the database level.
+                                            This feature is particularly useful
+                                            when managing multiple databases
+                                            within your SAP HANA environment. By
+                                            identifying which databases are
+                                            consuming the most memory, you can
+                                            make informed decisions about
+                                            capacity planning, resource
+                                            allocation, and workload
+                                            balancing.</p>
+                                        <li
+                                            class="li-point"><p
+                                                class="li-p"><b>Customizable
+                                                    Dashboards and
+                                                    Alerts</b></p></li>
+                                        <p
+                                            class="text-size">SAP monitoring
+                                            tools often provide customizable
+                                            dashboards that allow you to
+                                            visualize key metrics and KPIs in a
+                                            way that aligns with your specific
+                                            monitoring requirements. You can
+                                            create tailored graphs, charts, and
+                                            tables to display memory utilization
+                                            trends, component-level breakdowns,
+                                            and database-specific insights.
+                                            Additionally, setting up alerts
+                                            based on predefined thresholds helps
+                                            you stay proactive and respond
+                                            quickly to potential issues.</p>
+                                        <li
+                                            class="li-point"><p
+                                                class="li-p"><b>Integration with
+                                                    Other Monitoring
+                                                    Tools</b></p></li>
+                                        <p
+                                            class="text-size">SAP HANA
+                                            monitoring can be seamlessly
+                                            integrated with other monitoring
+                                            solutions, such as application
+                                            performance monitoring (APM) tools.
+                                            This integration enables you to gain
+                                            a holistic view of your SAP
+                                            landscape, correlating SAP HANA
+                                            performance with the performance of
+                                            connected applications and services.
+                                            By consolidating monitoring data
+                                            from various sources, you can
+                                            streamline troubleshooting and gain
+                                            deeper insights into the overall
+                                            health and performance of your SAP
+                                            environment.</p>
+
+                                    </p>
+
+                                </p>
+
+                            </p>
+
+                        </ul>
+                        <!-- <a href="#">
+                                                <img alt
+                                                    src="assets/images/Blogs/img20.webp">
+                                            </a> -->
+                        <hr class="hr-line">
+                        <br>
+
+                        <h2>Monitoring and Administration Tools for Application
+                            Server ABAP
+                        </h2>
+                        <div class="post-image">
+                            <a href="#">
+                                <img alt
+                                    src="assets/images/sap-hana-memory-used-by-database.avif">
+                            </a>
+                        </div>
+                        <br>
+                        <ul><p class="text-size">
+                                Behind the smooth operation of any IT system
+                                lies a hidden layer of unsung heroes: monitoring
+                                tools. But these tools are more than just
+                                watchful eyes; they can be your secret weapon
+                                for making on-the-fly adjustments.
+                                <br>
+                                <b> Monitoring Made Mighty
+                                </b>
+                                <br>
+                                While their primary function is to keep a
+                                watchful eye on your system's health,
+                                these tools offer a hidden superpower: the
+                                ability to enact administrative changes. Imagine
+                                identifying a performance bottleneck through
+                                monitoring – with these tools, you can often
+                                make adjustments directly within the monitoring
+                                interface, saving valuable time and streamlining
+                                troubleshooting.
+                                <li
+                                    class="li-point"><p
+                                        class="li-p"><b>Accessing Your
+                                            Toolkit</b></p></li>
+                                <p
+                                    class="text-size"> &#x2022;Menu Navigation:
+                                    Head to the SAP Menu and navigate to
+                                    Administration -> System Administration.
+                                    From there, you'll find the specific tools
+                                    under the Administration and Monitor nodes.
+                                    <br>
+                                    &#x2022;Transaction Codes: For those who
+                                    prefer efficiency, memorize the transaction
+                                    codes associated with these tools for direct
+                                    access.
+                                    <br>
+                                </p>
+                            </p>
+
+                        </ul>
+                        <hr class="hr-line">
+                        <h2>Monitoring Tools and It's decription
+                        </h2>
+                        <ul><p class="text-size">
+
+                                <li
+                                    class="li-point"><p
+                                        class="li-p"><b>Consistency Checking (
+                                            SICK)</b></p></li>
+                                <p
+                                    class="text-size">
+                                    You run the consistency check directly after
+                                    the installation. This ascertains possible
+                                    inconsistences before the system is placed
+                                    into productive operation.</p>
+
+                                <li
+                                    class="li-point">
+                                    <p
+                                        class="li-p"><b>Overview of SAP
+                                            Application Servers (
+                                            SM51)</b></p></li>
+                                <p
+                                    class="text-size">
+
+                                    You can see all the application server
+                                    instances of the SAP system and monitor and
+                                    change their states.</p>
+
+                                <li
+                                    class="li-point"><p
+                                        class="li-p"><b>Monitoring AS ABAP
+                                            Processes ( SM50)</b></p></li>
+                                <p
+                                    class="text-size">
+
+                                    You can see the activity of work processes
+                                    belonging to an instance, assess the
+                                    utilization of work process, and manage the
+                                    work processes</p>
+
+                                <li
+                                    class="li-point">
+                                    <p
+                                        class="li-p"><b>Monitoring AS ABAP Users
+                                            ( SM04)</b></p></li>
+                                <p
+                                    class="text-size">
+                                    You can see which users are logged on the
+                                    instance and which resources are being used.
+                                    and along with this,
+                                    you can manage user sessions here.</p>
+                                <li
+                                    class="li-point"><p
+                                        class="li-p"><b>Using the ICM Monitor (
+                                            SMICM)</b></p></li>
+                                <p
+                                    class="text-size">
+                                    The Internet Communication Manager (ICM)
+                                    processes Internet requests (client and
+                                    server, HTTP(S), SMTP, etc.)
+
+                                    You can monitor and administrate the ICM.
+                                </p>
+
+                                <li
+                                    class="li-point">
+                                    <p
+                                        class="li-p"><b>Using the SAP Gateway
+                                            Monitor in the SAP System (
+                                            SMGW)</b></p></li>
+                                <p
+                                    class="text-size">
+                                    With the gateway monitor, you can monitor
+                                    and manage existing RFC connections.</p>
+
+                                <li
+                                    class="li-point">
+                                    <p
+                                        class="li-p"><b>Configuration of System
+                                            Resources for aRFC, tRFC, qRFC (
+                                            SARFC)</b></p></li>
+                                <p
+                                    class="text-size">
+                                    Here you can check the utilization of work
+                                    processes by parallel RFCs, and change the
+                                    configuration if there is a resource
+                                    bottleneck.</p>
+                            </p>
+                        </ul>
+                        <hr class="hr-line">
+                        <h2>Configuration and Administration
+                        </h2>
+                        <ul><p class="text-size">
+                                The following tools are used mainly for the
+                                configuration and administration of Application
+                                Server ABAP.
+                                <li
+                                    class="li-point"><p
+                                        class="li-p"><b>Configuration in the
+                                            CCMS</b></p></li>
+                                <p
+                                    class="text-size">
+                                    This section contains information about
+                                    configuring AS ABAP using the Computing
+                                    Center Management System (CCMS).
+                                    <li
+                                        class="li-point">
+                                        <p
+                                            class="li-p"><b>Area Menu
+                                                Maintenance</b></p></li>
+                                    <p
+                                        class="text-size">
+                                        You can edit area menus using a
+                                        maintenance interface
+                                        <li
+                                            class="li-point"><p
+                                                class="li-p"><b>Administration
+                                                    of the Number Range Buffer (
+                                                    SM56)</b></p></li>
+                                        <p
+                                            class="text-size">
+                                            You can get status information about
+                                            this buffer and can configure it in
+                                            line with your requirements.
+                                            <li
+                                                class="li-point">
+                                                <p
+                                                    class="li-p"><b>
+
+                                                        Process SAP System
+                                                        Messages ( SM02)
+                                                    </b></p></li>
+                                            <p
+                                                class="text-size">
+                                                You can send all users that are
+                                                logged on to the SAP system
+                                                important notifications in the
+                                                form of short messages.</p>
+
+                                        </ul>
+                                        <hr class="hr-line">
+
+                                        <br>
+                                        <h2>Maximize your SAP performance with
+                                            SMIIT CybeAI: A
+                                            Comprehensive
+                                            Solution</h2>
+                                        <div class="post-image">
+                                            <a href="#">
+                                                <img alt
+                                                    src="assets/images/Blue Simple Cyber Monday Instagram Post.png">
+                                            </a>
+                                        </div>
+                                        <br>
+                                        <p class="text-size">
+                                            SMIIT Cyber AI stands out as the
+                                            premier choice for SAP monitoring,
+                                            expertly addressing the multifaceted
+                                            challenges of maintaining optimal
+                                            performance in SAP environments. The
+                                            advanced capabilities of SMIIT Cyber
+                                            AI ensure real-time visibility into
+                                            the health and performance of SAP
+                                            systems, enabling IT teams to
+                                            swiftly detect and resolve issues
+                                            before they disrupt business
+                                            operations. What sets SMIIT Cyber AI
+                                            apart is its comprehensive coverage
+                                            across the entire SAP landscape,
+                                            including servers, databases,
+                                            applications, and network
+                                            infrastructure, providing a holistic
+                                            view that is crucial for effective
+                                            monitoring. Moreover, its robust
+                                            features ensure compliance and
+                                            security, essential for handling
+                                            sensitive data and meeting
+                                            regulatory requirements. The
+                                            solution’s scalability and
+                                            flexibility mean it can grow
+                                            alongside an organization, adapting
+                                            to evolving needs and ensuring
+                                            continuous, effective monitoring.
+                                            Additionally, SMIIT Cyber AI
+                                            seamlessly integrates with other
+                                            enterprise systems and tools, making
+                                            it an indispensable part of a modern
+                                            IT ecosystem. In essence, SMIIT
+                                            Cyber AI delivers unparalleled
+                                            performance and reliability in SAP
+                                            monitoring, ensuring businesses can
+                                            operate smoothly and efficiently.
+                                        </p>
+                                        <br>
+                                        <hr class="hr-line">
+                                    </div>
+                                    <div class="post-tags">
+                                        <a
+                                            href="#">Cybersecurity</a>
+                                        <a href="#">AI</a>
+                                        <a href="#">Tech</a>
+                                        <a href="#">Tools</a>
+                                        <!--post-tags-->
+                                    </div>
+                                    <div class="comments"
+                                        id="comments">
+
+                                        <div
+                                            class="comment-form-section">
+                                            <div
+                                                class="respond-form"
+                                                id="respond">
+                                                <div
+                                                    class="container">
+                                                    <div
+                                                        class="row">
+                                                        <div
+                                                            class="col-lg-12">
+                                                            <div
+                                                                class="respond-comment text-uppercase font_weight_600">
+                                                                Leave
+                                                                a
+                                                                <span>Comment</span>
+                                                                <!--respond-comment-->
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <form
+                                                    class="form-gray-fields"
+                                                    id="form_id">
+                                                    <div
+                                                        class="container">
+                                                        <div
+                                                            class="row">
+                                                            <div
+                                                                class="col-lg-4">
+                                                                <div
+                                                                    class="form-group">
+                                                                    <label
+                                                                        class="upper font_weight_600"
+                                                                        for="name">Name</label>
+                                                                    <input
+                                                                        class="form-control required"
+                                                                        name="senderName"
+                                                                        placeholder="Enter name"
+                                                                        id="user_name"
+                                                                        aria-required="true"
+                                                                        type="text"
+                                                                        required>
+                                                                    <span
+                                                                        id="name_error"
+                                                                        style="color: red;"></span>
+                                                                    <!--form-group-->
+                                                                </div>
+                                                                <!--col-->
+                                                            </div>
+                                                            <div
+                                                                class="col-lg-4">
+                                                                <div
+                                                                    class="form-group">
+                                                                    <label
+                                                                        class="upper font_weight_600"
+                                                                        for="email">Email</label>
+                                                                    <input
+                                                                        class="form-control required email"
+                                                                        name="senderEmail"
+                                                                        placeholder="Enter email"
+                                                                        id="user_email"
+                                                                        aria-required="true"
+                                                                        type="email"
+                                                                        required>
+                                                                    <span
+                                                                        id="email_error"
+                                                                        style="color: red;"></span>
+                                                                    <!--form-group-->
+                                                                </div>
+                                                                <!--col-->
+                                                            </div>
+                                                            <div
+                                                                class="col-lg-4">
+                                                                <div
+                                                                    class="form-group">
+                                                                    <label
+                                                                        class="upper font_weight_600"
+                                                                        for="website">Phone
+                                                                        No.</label>
+                                                                    <input
+                                                                        class="form-control website"
+                                                                        name="senderWebsite"
+                                                                        placeholder="Enter Phone No."
+                                                                        id="user_phn"
+                                                                        aria-required="false"
+                                                                        type="text"
+                                                                        required>
+                                                                    <span
+                                                                        id="phone_error"
+                                                                        style="color: red;"></span>
+                                                                    <!--form-group-->
+                                                                </div>
+                                                                <!--col-->
+                                                            </div>
+                                                            <!--row-->
+                                                        </div>
+                                                        <div
+                                                            class="row">
+                                                            <div
+                                                                class="col-lg-12">
+                                                                <div
+                                                                    class="form-group">
+                                                                    <label
+                                                                        class="upper font_weight_600"
+                                                                        for="comment">Your
+                                                                        comment</label>
+                                                                    <textarea
+                                                                        class="form-control required"
+                                                                        name="comment"
+                                                                        rows="9"
+                                                                        placeholder="Enter comment"
+                                                                        id="user_message"
+                                                                        aria-required="true"
+                                                                        required></textarea>
+                                                                    <span
+                                                                        id="message_error"
+                                                                        style="color: red;"></span>
+                                                                    <!--form-group-->
+                                                                </div>
+                                                                <!--col-->
+                                                            </div>
+                                                            <!--row-->
+                                                        </div>
+                                                        <div
+                                                            class="row">
+                                                            <div
+                                                                class="col-lg-12">
+                                                                <div
+                                                                    class="form-group text-center">
+                                                                    <button
+                                                                        class="btn font_weight_600"
+                                                                        type="submit"
+                                                                        onclick="sendMail()">Submit
+                                                                        Comment</button>
+                                                                    <!--form-group-->
+                                                                </div>
+                                                                <!--col-->
+                                                            </div>
+                                                            <!--row-->
+                                                        </div>
+                                                    </div>
+                                                    <!--form-gray-fields-->
+                                                </form>
+                                                <!--respond-form-->
+                                            </div>
+                                        </div>
+                                        <!--comments-->
+                                    </div>
+                                    <!--post-item-wrap-->
+                                </div>
+                                <!--post-item-->
+                            </div>
+                            <!--single-post01-->
+                        </div>
+                        <!--col-->
+                    </div>
+                    <div
+                        class="sidebar sticky-sidebar col-lg-3 wow slideInRight">
+                        <div class="theiaStickySidebar">
+                            <div
+                                class="widget widget-newsletter">
+                                <form
+                                    id="widget-search-form-sidebar"
+                                    class="form-inline">
+                                    <div class="input-group">
+                                        <input type="text"
+                                            aria-required="true"
+                                            name="q"
+                                            class="form-control widget-search-form"
+                                            placeholder="Search for pages...">
+                                        <div
+                                            class="input-group-append">
+                                            <span
+                                                class="input-group-btns">
+                                                <button
+                                                    type="submit"
+                                                    id="widget-widget-search-form-button"
+                                                    class="btn">
+                                                    <span
+                                                        class="fa fa-search"></span>
+                                                </button>
+                                            </span>
+                                            <!--input-group-append-->
+                                        </div>
+                                        <!--input-group-->
+                                    </div>
+                                    <!--form-inline-->
+                                </form>
+                                <!--widget-->
+                            </div>
+                            <div class="widget">
+                                <div class="tabs">
+                                    <ul class="nav nav-tabs"
+                                        id="tabs-posts"
+                                        role="tablist">
+                                        <li
+                                            class="nav-item p-0">
+                                            <a
+                                                class="nav-link active"
+                                                id="home-tab"
+                                                data-toggle="tab"
+                                                href="#popular"
+                                                role="tab"
+                                                aria-controls="popular"
+                                                aria-selected="true">Popular</a>
+                                        </li>
+                                        <li
+                                            class="nav-item p-0">
+                                            <a class="nav-link"
+                                                id="profile-tab"
+                                                data-toggle="tab"
+                                                href="#featured"
+                                                role="tab"
+                                                aria-controls="featured"
+                                                aria-selected="false">Featured</a>
+                                        </li>
+                                        <li
+                                            class="nav-item p-0">
+                                            <a class="nav-link"
+                                                id="contact-tab"
+                                                data-toggle="tab"
+                                                href="#recent"
+                                                role="tab"
+                                                aria-controls="recent"
+                                                aria-selected="false">Recent</a>
+                                        </li>
+                                        <!--nav-tabs-->
+                                    </ul>
+                                    <div class="tab-content"
+                                        id="tabs-posts-content">
+                                        <div
+                                            class="tab-pane fade show active"
+                                            id="popular"
+                                            role="tabpanel">
+                                            <div
+                                                class="post-thumbnail-list">
+                                                <div
+                                                    class="post-thumbnail-entry">
+                                                    <a
+                                                        href="./blog9.html"><img
+                                                            alt
+                                                            src="assets/images/Blue And White Modern Logistics Services Instagram Post.jpg"
+                                                            class="img-fluid"></a>
+                                                    <div
+                                                        class="post-thumbnail-content">
+                                                        <a
+                                                            href="./blog9.html">Why
+                                                            Supply
+                                                            Chain
+                                                            Attacks
+                                                            Are
+                                                            a
+                                                            Major
+                                                            Security
+                                                            Threat</a>
+                                                        <span
+                                                            class="post-date"><span
+                                                                class="far fa-clock"></span>
+                                                            6m
+                                                            ago</span>
+                                                        <span
+                                                            class="post-category"><span
+                                                                class="fa fa-tag"></span>
+                                                            Technology</span>
+                                                        <!--post-thumbnail-content-->
+                                                    </div>
+                                                    <!--post-thumbnail-entry-->
+                                                </div>
+                                                <div
+                                                    class="post-thumbnail-entry">
+                                                    <a
+                                                        href="./blog8.html"><img
+                                                            alt
+                                                            src="assets/images/Neon Blue Glitch Youtube Thumbnail (2).png"
+                                                            class="img-fluid"></a>
+                                                    <div
+                                                        class="post-thumbnail-content">
+                                                        <a
+                                                            href="./blog8.html">Before
+                                                            They
+                                                            Start:
+                                                            OWASP
+                                                            Tools
+                                                            You
+                                                            Need</a>
+                                                        <span
+                                                            class="post-date"><span
+                                                                class="far fa-clock"></span>
+                                                            24h
+                                                            ago</span>
+                                                        <span
+                                                            class="post-category"><span
+                                                                class="fa fa-tag"></span>
+                                                            Cybersecurity</span>
+                                                        <!--post-thumbnail-content-->
+                                                    </div>
+                                                    <!--post-thumbnail-entry-->
+                                                </div>
+                                                <div
+                                                    class="post-thumbnail-entry">
+                                                    <a
+                                                        href="./blog1.html"><img
+                                                            alt
+                                                            src="assets/images/1.webp"
+                                                            class="img-fluid"></a>
+                                                    <div
+                                                        class="post-thumbnail-content">
+                                                        <a
+                                                            href="./blog1.html">The
+                                                            Transformative
+                                                            Role
+                                                            of
+                                                            AI
+                                                            in
+                                                            Cybersecurity</a>
+                                                        <br>
+                                                        <span
+                                                            class="post-date"><span
+                                                                class="far fa-clock"></span>
+                                                            11h
+                                                            ago</span>
+                                                        <span
+                                                            class="post-category"><span
+                                                                class="fa fa-tag"></span>
+                                                            Tech</span>
+                                                        <!--post-thumbnail-content-->
+                                                    </div>
+                                                    <!--post-thumbnail-entry-->
+                                                </div>
+                                                <!--post-thumbnail-list-->
+                                            </div>
+                                            <!--tab-pane-->
+                                        </div>
+                                        <div
+                                            class="tab-pane fade"
+                                            id="featured"
+                                            role="tabpanel">
+                                            <div
+                                                class="post-thumbnail-list">
+                                                <div
+                                                    class="post-thumbnail-entry">
+                                                    <a
+                                                        href="./blog5.html"><img
+                                                            alt
+                                                            src="assets/images/Blogs/img18.webp"
+                                                            class="img-fluid"></a>
+                                                    <div
+                                                        class="post-thumbnail-content">
+                                                        <a
+                                                            href="./blog5.html">Docker
+                                                            and
+                                                            runC
+                                                            Vulnerabilities</a>
+                                                        <span
+                                                            class="post-date"><span
+                                                                class="far fa-clock"></span>
+                                                            6m
+                                                            ago</span>
+                                                        <span
+                                                            class="post-category"><span
+                                                                class="fa fa-tag"></span>
+                                                            Technology</span>
+                                                        <!--post-thumbnail-content-->
+                                                    </div>
+                                                    <!--post-thumbnail-entry-->
+                                                </div>
+                                                <div
+                                                    class="post-thumbnail-entry">
+                                                    <a
+                                                        href="./blog2.html"><img
+                                                            alt
+                                                            src="assets/images/Blogs/img8.webp"
+                                                            class="img-fluid"></a>
+                                                    <div
+                                                        class="post-thumbnail-content">
+                                                        <a
+                                                            href="./blog2.html">Jenkins
+                                                            Security
+                                                            Advisory</a>
+                                                        <span
+                                                            class="post-date"><span
+                                                                class="far fa-clock"></span>
+                                                            24h
+                                                            ago</span>
+                                                        <span
+                                                            class="post-category"><span
+                                                                class="fa fa-tag"></span>
+                                                            Cybersecurity</span>
+                                                        <!--post-thumbnail-content-->
+                                                    </div>
+                                                    <!--post-thumbnail-entry-->
+                                                </div>
+                                                <div
+                                                    class="post-thumbnail-entry">
+                                                    <a
+                                                        href="./blog3.html"><img
+                                                            alt
+                                                            src="assets/images/blog-6.jpg"
+                                                            class="img-fluid"></a>
+                                                    <div
+                                                        class="post-thumbnail-content">
+                                                        <a
+                                                            href="./blog3.html">A
+                                                            Comprehensive
+                                                            Guide
+                                                            to
+                                                            Cybersecurity</a>
+                                                        <span
+                                                            class="post-date"><span
+                                                                class="far fa-clock"></span>
+                                                            11h
+                                                            ago</span>
+                                                        <span
+                                                            class="post-category"><span
+                                                                class="fa fa-tag"></span>
+                                                            Tech</span>
+                                                        <!--post-thumbnail-content-->
+                                                    </div>
+                                                    <!--post-thumbnail-entry-->
+                                                </div>
+                                                <!--post-thumbnail-list-->
+                                            </div>
+                                            <!--tab-pane-->
+                                        </div>
+                                        <div
+                                            class="tab-pane fade"
+                                            id="recent"
+                                            role="tabpanel">
+                                            <div
+                                                class="post-thumbnail-list">
+                                                <div
+                                                    class="post-thumbnail-entry">
+                                                    <a
+                                                        href="blog7.html"><img
+                                                            alt
+                                                            src="assets/images/1.png"
+                                                            class="img-fluid"></a>
+                                                    <div
+                                                        class="post-thumbnail-content">
+                                                        <a
+                                                            href="blog7.html">Strengthening
+                                                            Your
+                                                            Defense
+                                                            Against
+                                                            Cyberattacks</a>
+                                                        <span
+                                                            class="post-date"><span
+                                                                class="far fa-clock"></span>
+                                                            6m
+                                                            ago</span>
+                                                        <span
+                                                            class="post-category"><span
+                                                                class="fa fa-tag"></span>
+                                                            Technology</span>
+                                                        <!--post-thumbnail-content-->
+                                                    </div>
+                                                    <!--post-thumbnail-entry-->
+                                                </div>
+                                                <div
+                                                    class="post-thumbnail-entry">
+                                                    <a
+                                                        href="blog4.html"><img
+                                                            alt
+                                                            src="assets/images/Blogs/img16.webp"
+                                                            class="img-fluid"></a>
+                                                    <div
+                                                        class="post-thumbnail-content">
+                                                        <a
+                                                            href="blog4.html">Palo
+                                                            Alto
+                                                            Networks’
+                                                            Cybersecurity
+                                                            Predictions</a>
+                                                        <span
+                                                            class="post-date"><span
+                                                                class="far fa-clock"></span>
+                                                            24h
+                                                            ago</span>
+                                                        <span
+                                                            class="post-category"><span
+                                                                class="fa fa-tag"></span>
+                                                            Cybersecurity</span>
+                                                        <!--post-thumbnail-content-->
+                                                    </div>
+                                                    <!--post-thumbnail-entry-->
+                                                </div>
+                                                <div
+                                                    class="post-thumbnail-entry">
+                                                    <a
+                                                        href="blog6.html"><img
+                                                            alt
+                                                            src="assets/images/Blogs/img20.webp"
+                                                            class="img-fluid"></a>
+                                                    <div
+                                                        class="post-thumbnail-content">
+                                                        <a
+                                                            href="blog6.html">Allianz
+                                                            Risk
+                                                            Barometer
+                                                            2024
+                                                        </a>
+                                                        <span
+                                                            class="post-date"><span
+                                                                class="far fa-clock"></span>
+                                                            11h
+                                                            ago</span>
+                                                        <span
+                                                            class="post-category"><span
+                                                                class="fa fa-tag"></span>
+                                                            Tech</span>
+                                                        <!--post-thumbnail-content-->
+                                                    </div>
+                                                    <!--post-thumbnail-entry-->
+                                                </div>
+                                                <!--post-thumbnail-list-->
+                                            </div>
+                                            <!--tab-pane-->
+                                        </div>
+                                        <!--tab-content-->
+                                    </div>
+                                    <!--tabs-->
+                                </div>
+                                <!--widget-->
+                            </div>
+
+                            <div class="widget widget-tweeter">
+                                <h4
+                                    class="widget-title font_weight_600">Recent
+                                    Tweets</h4>
+                                <div id="twitter-cnt">
+                                    <ul>
+                                        <li>
+                                            "Protect your digital fortress! 💻🔒 Stay ahead of cyber threats with these essential cybersecurity tips"
+                                            <a
+                                                href="https://bit.ly/smiit-cyberai1"
+                                                target="_blank"
+                                                title="Visit this link">https://bit.ly/smiit-cyberai1</a>
+                                            <small>Jan/12/2024</small>
+                                        </li>
+                                        <li>
+                                            "Hackers beware! 🔍🛡️ Strengthen your defense against cyber attacks with the latest cybersecurity tools and best practices"
+                                            <a
+                                                href="https://bit.ly/smiit-cyberai1"
+                                                target="_blank"
+                                                title="Visit this link">https://bit.ly/smiit-cyberai2</a>
+
+                                            <small>Feb/10/2024</small>
+                                        </li>
+                                    </ul>
+                                    <!--twitter-cnt-->
+                                </div>
+                                <!--widget-->
+                            </div>
+                            <div class="widget widget-tags">
+                                <h4
+                                    class="widget-title font_weight_600">Tags</h4>
+                                <div class="tags">
+                                    <a
+                                        href="#">Cybersecurity</a>
+                                    <a href="#">AI</a>
+                                    <a href="#">AI and
+                                        Security</a>
+                                    <a href="#">Tech</a>
+
+                                    <a href="#">Tools</a>
+                                    <a href="#">SMIIT</a>
+                                    <a
+                                        href="#">SMMIT-CyberAI</a>
+                                    <a href="#">Docker</a>
+                                    <a href="#">Cloud
+                                        Security</a>
+                                    <!--tags-->
+                                </div>
+                                <!--widget-->
+                            </div>
+                            <!--theiaStickySidebar-->
+                        </div>
+                        <!--sidebar-->
+                    </div>
+                    <!--row-->
+                </div>
+            </div>
+            <!--container-->
+        </section>
+
+        <!-- Footer-Section -->
+        <div class="footer-section">
+            <div class="container">
+                <div class="row">
+                    <div
+                        class="col-lg-4 col-md-4 col-sm-6 smiit_icon">
+                        <div class="footer-content1">
+                            <a href="index.html"
+                                class="text-decoration-none fot-logo"><figure><img
+                                        src="./assets/logo2.svg"
+                                        alt
+                                        class="img-fluid"></figure></a>
+                            <p class="footer-section-text">Our
+                                mission
+                                is to
+                                empower businesses and
+                                individuals
+                                with
+                                robust
+                                cybersecurity solutions.</p>
+                            <ul class="list-unstyled">
+                                <li class="list-item">
+                                    <a href="#"><i
+                                            class="fa-brands fa-linkedin marginLeft"></i></a>
+                                    <a href="#"><i
+                                            class="fa-brands fa-twitter marginLeft"></i></a>
+                                    <a href="#"><i
+                                            class="fa-brands fa-instagram marginLeft"></i></a>
+                                    <a href="#"><i
+                                            class="fa-brands fa-youtube marginLeft"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div
+                        class="col-lg-2 col-md-2 col-sm-12 d-lg-block d-none">
+                        <h5
+                            class="footer-link footer-next-list footer-next-list-about">About
+                            Us</h5>
+                        <ul class="useful-footer">
+                            <li>
+                                <a href="services.html"
+                                    class="text-decoration-none footer-link-p">
+                                    Services
+                                </a>
+                            </li>
+                            <li>
+                                <a href="privacy.html"
+                                    class="text-decoration-none footer-link-p">
+                                    Privacy
+                                </a>
+                            </li>
+                            <li>
+                                <a href="partner.html"
+                                    class="text-decoration-none footer-link-p">
+                                    Partnership
+                                </a>
+                            </li>
+                            <li>
+                                <a href="infinite-scroll.html"
+                                    class="text-decoration-none footer-link-p">
+                                    Blogs
+                                </a>
+                            </li>
+                            <li>
+                                <a href="about.html"
+                                    class="text-decoration-none footer-link-p">
+                                    About Us
+                                </a>
+                            </li>
+                            <li>
+                                <a href="faq.html"
+                                    class="text-decoration-none footer-link-p">
+                                    FAQ
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./contact.html"
+                                    class="text-decoration-none footer-link-p">
+                                    Contact us
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div
+                        class="col-lg-3 col-md-4 col-sm-12 d-md-block">
+                        <h5
+                            class="footer-link text-white footer-next-list footer-next-list-contact">Contact
+                            Info</h5>
+                        <div
+                            class="footer-list footer-link contact-list">
+                            <div class="icon-list-box1">
+                                <ul
+                                    class="list-unstyled contact-us-ul">
+                                    <li class="list-item">
+                                        <a
+                                            href="tel:+441926674556"
+                                            class="text-decoration-none footer-link-auto">+44
+                                            (0) 19 2667 4556</a>
+                                        <i
+                                            class="fa fa-phone fa-icon footer-location3"></i>
+                                    </li>
+                                    <li class="list-item">
+                                        <a
+                                            href="mailto:Info@smiit-cyberai.com"
+                                            class="text-decoration-none footer-link-auto">Info@smiit-cyberai.com</a>
+                                        <i
+                                            class="fa fa-envelope fa-icon footer-location2"></i>
+                                    </li>
+                                    <li class="list-item">
+                                        <a
+                                            href="https://maps.app.goo.gl/SZJCeAnrNb1wUrcc9"
+                                            class="text-decoration-none footer-link-auto">
+                                            Pure Leamington,
+                                            Suite-36,
+                                            Plato Close,
+                                            Tachbrook
+                                            Park,
+                                            Leamington Spa,
+                                            CV34 6WE
+                                            United Kingdom</a>
+                                        <i
+                                            class="fa-solid fa-location-dot footer-location"></i>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="footer-list signupbox">
+                            <h4
+                                class="footer-link text-white footer-next-list footer-next-list-signup">Sign
+                                up for Newsletter</h4>
+                            <div class="icon-list-box1">
+                                <div class="col-inner">
+                                    <input type="tel"
+                                        name="email"
+                                        class="form-control input-fill"
+                                        placeholder="Email Address:"
+                                        id="newsletter_email">
+                                    <span
+                                        id="newsletter_email_error"
+                                        style="color: red;"></span>
+                                </div>
+                                <div class="form-btn">
+                                    <button type="submit"
+                                        class="btn btn-primary"
+                                        onclick="sendSignupMail()">Subscribe</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bar text-center">
+                <div class="row">
+                    <div class="footer-bar-content w-100">
+                        <p class="text-size-16 mb-0">SMIIT
+                            CyberAI
+                            copyright
+                            ©
+                            2024. All Rights Reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="toastContainer" class="toast-container"></div>
+        <script
+            src="https://code.jquery.com/jquery-1.12.1.min.js"></script>
+        <script src="assets/js/animations.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/jquery-3.6.0.min.js"></script>
+        <script src="assets/js/popper.min.js"></script>
+        <script src="assets/js/custom-script.js"></script>
+        <script src="assets/js/owl.carousel.js"></script>
+        <script
+            src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script src="assets/js/text-animations.js"></script>
+        <script src="assets/js/carousel.js"></script>
+
+        <script src="assets/js/blog.js"></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js"></script>
+        <script src="https://unpkg.com/ityped@0.0.10"></script>
+        <script src="./assets/js/type.js"></script>
+        <script src="./assets/js/newsletter.js"></script>
+        <script src="assets/js/contact.js"></script>
+
+        <script type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+        <script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "JeNY_vZC3zWyHp7hv",
+      });
+   })();
+</script>
+    </body>
+
+</html>
