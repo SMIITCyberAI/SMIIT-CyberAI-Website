@@ -1106,13 +1106,13 @@ START: Hero CSS
 }
 
 .tj-hero-section-two {
-  padding-top: 235px;
+  padding-top: 35px;
   padding-bottom: 80px;
   position: relative;
 }
 
 .tj-hero-section-two .tj-sec-heading-two .title {
-  color: var(--tj-color-common-black-3);
+  color: var(--tj-color-gradient-1);
   max-width: 840px;
   margin: auto;
   margin-bottom: 25px;
@@ -1838,7 +1838,7 @@ START: About CSS
 
 .tj-about-section-two {
   background: #242b44;
-  padding-top: 190px;
+  /* padding-top: 190px; */
   padding-bottom: 120px;
   overflow: hidden;
   position: relative;
@@ -3544,10 +3544,10 @@ START: Blog CSS
 
 .tj-blog-item .blog-content-area {
   border-radius: 0px 0px 20px 20px;
-  border-right: 1px solid var(--tj-color-light-6);
-  border-left: 1px solid var(--tj-color-light-6);
-  border-bottom: 1px solid var(--tj-color-light-6);
-  background: var(--tj-color-common-white);
+  border-right: 1px solid var(--tj-color-extra-4);
+  border-left: 1px solid var(--tj-color-extra-4);
+  border-bottom: 1px solid var(--tj-color-extra-4);
+  background: #2a3150;
   padding: 30px 30px 50px;
   -webkit-transition: all 0.4s ease-in-out 0s;
   -moz-transition: all 0.4s ease-in-out 0s;
@@ -3561,7 +3561,7 @@ START: Blog CSS
 }
 
 .tj-blog-item .blog-content-area .title-link .blog-title {
-  color: var(--tj-color-common-black-3);
+  color: var(--tj-color-grey-3);
   -webkit-transition: all 0.4s ease-in-out 0s;
   -moz-transition: all 0.4s ease-in-out 0s;
   -ms-transition: all 0.4s ease-in-out 0s;
@@ -3637,7 +3637,7 @@ START: Blog CSS
   padding-top: 115px;
   padding-bottom: 90px;
   position: relative;
-  background-color: var(--tj-color-grey-6);
+  background-color: #1b2137;
 }
 
 .tj-blog-page .tj-sec-heading-two {
@@ -3716,8 +3716,8 @@ START: Blog CSS
   left: 0;
   z-index: -1;
   border-radius: 40px;
-  background: var(--tj-color-common-white);
-  box-shadow: 15px 9px 30px 0px rgba(117, 77, 233, 0.05);
+  background: #1b2137;
+ box-shadow: 15px 9px 30px 0px rgba(117, 77, 233, 0.05);
 }
 
 .blog-details-wrapper::after {
@@ -5970,10 +5970,10 @@ START: Circle CSS
 
 .tj-slider-section .tj-circle-box-one-1 {
   position: absolute;
-  top: auto;
+  top: 97%;
   right: auto;
-  bottom: 12%;
-  left: 10%;
+  bottom: 0%;
+  left: 11%;
 }
 
 .tj-solution-section .tj-circle-box-one-2 {
@@ -6743,8 +6743,8 @@ START: Feature CSS
 START: Slider CSS
 ----------------------------------------*/
 .tj-slider-section {
-  padding-top: 220px;
-  padding-bottom: 310px;
+  padding-top: 0px;
+  padding-bottom: 0px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -7153,6 +7153,8 @@ START: Preloder CSS
     transform: rotate(360deg) scale(0.8);
   }
 }
-
+.desc-li{
+  color: white;
+}
 /* !END: Preloder CSS */
 /*# sourceMappingURL=main.css.map */
