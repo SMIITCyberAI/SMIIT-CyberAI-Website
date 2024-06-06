@@ -1839,7 +1839,7 @@ START: About CSS
 .tj-about-section-two {
   background: #242b44;
   /* padding-top: 190px; */
-  padding-bottom: 120px;
+  /* padding-bottom: 120px; */
   overflow: hidden;
   position: relative;
 }
