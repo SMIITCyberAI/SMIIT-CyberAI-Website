@@ -4506,3 +4506,45 @@ html {
   position: relative;
   z-index: 3;
 }
+/* General Styles */
+.popup-wrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.left-section {
+  flex: 1;
+  padding: 20px;
+  background-color: #f4f4f4;
+  text-align: center;
+}
+
+.left-section h1 {
+  margin: 0;
+  font-size: 24px;
+  color: #333;
+}
+
+.divider {
+  width: 2px;
+  /* background-color: white; */
+  height: 100%;
+  margin: 0 20px;
+}
+
+.right-section {
+  flex: 2;
+  padding: 20px;
+}
+
+.right-section .box-content {
+  width: 100%;
+}
+
+/* Add other specific styles for your form as needed */
+#box-popup {
+  width: 80%; /* Adjust as needed */
+  max-width: 1200px; /* Adjust as needed */
+  margin: 0 auto;
+}
