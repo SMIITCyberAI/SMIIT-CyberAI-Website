@@ -2797,6 +2797,9 @@
     left: 0% !important;
     width: 120%;
   }
+  .smiit-popup{
+    display:none;
+  }
 }
 
 @media screen and (min-width: 889px) and (max-width: 991px) {
@@ -2819,6 +2822,9 @@
   .custom-button {
     position: relative;
     left: 36%;
+  }
+  .smiit-popup{
+    display:none;
   }
 
 }
@@ -3550,6 +3556,9 @@
   }
   .team-container{
    width: 90%; 
+  }
+  .smiit-popup{
+    display:none;
   }
 }
 
@@ -4341,6 +4350,9 @@
   .team-container{
     width: 90%; 
    }
+   .smiit-popup{
+    display:none;
+  }
 }
 
 
@@ -4445,6 +4457,9 @@
     height: auto;
     width: 70%;
   }
+  .smiit-popup{
+    display:none;
+  }
 }
 
 
@@ -4483,7 +4498,9 @@
     margin-bottom: 20px;
     left: 14%
   }
-
+  .smiit-popup{
+    display:none;
+  }
   .team .p-0 {
     padding: 0 15px !important;
   }
@@ -4548,6 +4565,8 @@
     position: relative;
     padding-top: 50px;
   }
-
+.smiit-popup{
+  display:none;
+}
 
 }
