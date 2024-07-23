@@ -1343,6 +1343,9 @@ html {
 .privacy-text {
   text-align: initial;
 }
+.privacy-texts {
+  text-align: center;
+}
 
 .sub-head {
   margin-bottom: 0px !important;
